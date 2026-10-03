@@ -1,0 +1,35 @@
+{
+  "quoteMode": {
+    "type": "dropdown",
+    "text": "Anime Genre Filter",
+    "value": 0,
+    "options": [
+      "All Genres",
+      "Action / Shonen",
+      "Ecchi / Harem",
+      "Romance / Drama",
+      "Comedy",
+      "Psychological / Sci-Fi",
+      "Fantasy / Supernatural"
+    ]
+  },
+  "cardOpacity": {
+    "type": "slider",
+    "text": "Card Translucency",
+    "min": 20,
+    "max": 100,
+    "value": 65
+  },
+  "accentColor": {
+    "type": "color",
+    "text": "Quote Accent Color",
+    "value": "#FF9D00"
+  },
+  "videoOpacity": {
+    "type": "slider",
+    "text": "Video Dimming (%)",
+    "min": 0,
+    "max": 100,
+    "value": 100
+  }
+}

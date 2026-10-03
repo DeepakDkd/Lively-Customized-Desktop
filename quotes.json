@@ -1,0 +1,5609 @@
+[
+  {
+    "id": 1,
+    "quote": "I'm not gonna run away, I never go back on my word! That's my nindo: my ninja way!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 2,
+    "quote": "In the ninja world, those who break the rules are scum... but those who abandon their friends are worse than scum.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 3,
+    "quote": "If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be.",
+    "anime": "Naruto Shippuden",
+    "character": "Nagato (Pain)",
+    "language": "en"
+  },
+  {
+    "id": 4,
+    "quote": "A dropout will beat the genius through hard work. And I will prove it!",
+    "anime": "Naruto Shippuden",
+    "character": "Rock Lee",
+    "language": "en"
+  },
+  {
+    "id": 5,
+    "quote": "Knowing what it feels to be in pain is exactly why we try to be kind to others.",
+    "anime": "Naruto Shippuden",
+    "character": "Gaara",
+    "language": "en"
+  },
+  {
+    "id": 6,
+    "quote": "When people get hurt, they learn to hate... When people hurt others, they become hated and racked with guilt.",
+    "anime": "Naruto Shippuden",
+    "character": "Jiraiya",
+    "language": "en"
+  },
+  {
+    "id": 7,
+    "quote": "The hole in one's heart gets filled by others... My friends made me realize that.",
+    "anime": "Naruto Shippuden",
+    "character": "Obito Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 8,
+    "quote": "Those who cannot acknowledge themselves will eventually fail.",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 9,
+    "quote": "A shinobi's life is not measured by how they live but by what they accomplish before their death.",
+    "anime": "Naruto Shippuden",
+    "character": "Minato Namikaze",
+    "language": "en"
+  },
+  {
+    "id": 10,
+    "quote": "True power doesn't come when you're fighting for yourself. It comes when you're fighting to protect someone.",
+    "anime": "Naruto Shippuden",
+    "character": "Hinata Hyuga",
+    "language": "en"
+  },
+  {
+    "id": 11,
+    "quote": "The moment people come to know love, they run the risk of carrying hate.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 12,
+    "quote": "If you want to kill me, curse me! Hate me! And live a long, unsightly life!",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 13,
+    "quote": "A true teacher doesn't teach nature transformation; they teach you how to live your life.",
+    "anime": "Naruto Shippuden",
+    "character": "Asuma Sarutobi",
+    "language": "en"
+  },
+  {
+    "id": 14,
+    "quote": "The difference between stupidity and genius is that genius has its limits.",
+    "anime": "Naruto Shippuden",
+    "character": "Shikamaru Nara",
+    "language": "en"
+  },
+  {
+    "id": 15,
+    "quote": "Sympathy? That's the emotion I hate the most. It changes nothing.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasori",
+    "language": "en"
+  },
+  {
+    "id": 16,
+    "quote": "People cannot win against their loneliness.",
+    "anime": "Naruto Shippuden",
+    "character": "Killer Bee",
+    "language": "en"
+  },
+  {
+    "id": 17,
+    "quote": "The longer you live, the more you realize that reality is just made of pain, suffering, and emptiness.",
+    "anime": "Naruto Shippuden",
+    "character": "Pain",
+    "language": "en"
+  },
+  {
+    "id": 18,
+    "quote": "When a man learns to love, he must bear the risk of hatred.",
+    "anime": "Naruto Shippuden",
+    "character": "Tobi",
+    "language": "en"
+  },
+  {
+    "id": 19,
+    "quote": "To know what is right and choose to ignore it is the act of a coward.",
+    "anime": "Naruto Shippuden",
+    "character": "Sakura Haruno",
+    "language": "en"
+  },
+  {
+    "id": 20,
+    "quote": "A place where someone still thinks about you is a place you can call home.",
+    "anime": "Naruto Shippuden",
+    "character": "Jiraiya",
+    "language": "en"
+  },
+  {
+    "id": 21,
+    "quote": "The concept of hope is nothing more than giving up. A word that holds no true meaning.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 22,
+    "quote": "If you don't share someone's pain, you can never understand them.",
+    "anime": "Naruto Shippuden",
+    "character": "Nagato",
+    "language": "en"
+  },
+  {
+    "id": 23,
+    "quote": "Love is not necessary; power is the only true necessity!",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 24,
+    "quote": "The world is not as simple as I thought it was... so I stopped thinking.",
+    "anime": "Naruto Shippuden",
+    "character": "Hidan",
+    "language": "en"
+  },
+  {
+    "id": 25,
+    "quote": "A person grows up when he's able to overcome hardships. Protection is important, but there are some things that a person must learn on his own.",
+    "anime": "Naruto Shippuden",
+    "character": "Iruka Umino",
+    "language": "en"
+  },
+  {
+    "id": 26,
+    "quote": "I don't care if I die. I don't have to win... I just need to stand my ground and not run.",
+    "anime": "Naruto Shippuden",
+    "character": "Neji Hyuga",
+    "language": "en"
+  },
+  {
+    "id": 27,
+    "quote": "When you give up, your dreams and everything else, they're gone.",
+    "anime": "Naruto Shippuden",
+    "character": "Kushina Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 28,
+    "quote": "Those who forgive themselves, and are able to accept their true nature... They are the strong ones!",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 29,
+    "quote": "The true measure of a shinobi is not how he lives but how he dies.",
+    "anime": "Naruto Shippuden",
+    "character": "Danzo Shimura",
+    "language": "en"
+  },
+  {
+    "id": 30,
+    "quote": "Fear is not evil. It tells you what your weakness is. And once you know your weakness, you can become stronger as well as kinder.",
+    "anime": "Naruto Shippuden",
+    "character": "Guren",
+    "language": "en"
+  },
+  {
+    "id": 31,
+    "quote": "Sometimes you must hurt in order to know, fall in order to grow, lose in order to gain because life's greatest lessons are learned through pain.",
+    "anime": "Naruto Shippuden",
+    "character": "Pain",
+    "language": "en"
+  },
+  {
+    "id": 32,
+    "quote": "The next generation will always surpass the previous one. It's one of the never-ending cycles in life.",
+    "anime": "Naruto Shippuden",
+    "character": "Hiruzen Sarutobi",
+    "language": "en"
+  },
+  {
+    "id": 33,
+    "quote": "No matter how much you hate it, this is who you are. Trying to run from that is no different than running from yourself.",
+    "anime": "Naruto Shippuden",
+    "character": "Kisame Hoshigaki",
+    "language": "en"
+  },
+  {
+    "id": 34,
+    "quote": "A smile is the easiest way out of a difficult situation.",
+    "anime": "Naruto Shippuden",
+    "character": "Sai",
+    "language": "en"
+  },
+  {
+    "id": 35,
+    "quote": "A ninja is one who endures no matter what gets thrown at him.",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 36,
+    "quote": "The weak don't get to decide anything, not even how they die.",
+    "anime": "Naruto Shippuden",
+    "character": "Konan",
+    "language": "en"
+  },
+  {
+    "id": 37,
+    "quote": "You should give up trying to make me give up!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 38,
+    "quote": "When you protect someone you love, courage wells up from within.",
+    "anime": "Naruto Shippuden",
+    "character": "Chiyo",
+    "language": "en"
+  },
+  {
+    "id": 39,
+    "quote": "The world is full of hatred and pain. But I still believe it's possible to achieve peace.",
+    "anime": "Naruto Shippuden",
+    "character": "Yahiko",
+    "language": "en"
+  },
+  {
+    "id": 40,
+    "quote": "The only ones who should kill are those who are prepared to be killed!",
+    "anime": "Naruto Shippuden",
+    "character": "Lelouch Lamperouge",
+    "language": "en"
+  },
+  {
+    "id": 41,
+    "quote": "No matter how deep the night, it always turns to day, eventually.",
+    "anime": "Naruto Shippuden",
+    "character": "Kurenai Yuhi",
+    "language": "en"
+  },
+  {
+    "id": 42,
+    "quote": "A genius, huh? What does that mean? 'Genius'? So I was not born with a whole lot of natural talent, not gifted like Neji... but I work hard and I never give up! That is my gift... that is my ninja way!",
+    "anime": "Naruto Shippuden",
+    "character": "Rock Lee",
+    "language": "en"
+  },
+  {
+    "id": 43,
+    "quote": "If you don't like your path, start paving another one!",
+    "anime": "Naruto Shippuden",
+    "character": "Tsunade",
+    "language": "en"
+  },
+  {
+    "id": 44,
+    "quote": "I will love you always, until the day I die and beyond. Even then, I will love you throughout all time.",
+    "anime": "Naruto Shippuden",
+    "character": "Haku",
+    "language": "en"
+  },
+  {
+    "id": 45,
+    "quote": "Sometimes you must hurt in order to know, fall in order to grow, lose in order to gain.",
+    "anime": "Naruto Shippuden",
+    "character": "Pain",
+    "language": "en"
+  },
+  {
+    "id": 46,
+    "quote": "The fire of youth burns eternal!",
+    "anime": "Naruto Shippuden",
+    "character": "Might Guy",
+    "language": "en"
+  },
+  {
+    "id": 47,
+    "quote": "I won't let my comrades die. I'll protect you with my life!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 48,
+    "quote": "If you want to kill me, hate me, detest me, and survive in an unsightly way.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 49,
+    "quote": "The moment when people understand each other... that's when true peace begins.",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 50,
+    "quote": "I exist not to be defeated.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 51,
+    "quote": "The pain of being alone is completely out of this world, isn't it? I don't know why, but I understand your feelings so much, it actually hurts.",
+    "anime": "Naruto Shippuden",
+    "character": "Obito Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 52,
+    "quote": "I finally understand now... I'm needed by someone. I'm needed right here!",
+    "anime": "Naruto Shippuden",
+    "character": "Gaara",
+    "language": "en"
+  },
+  {
+    "id": 53,
+    "quote": "People live their lives bound by what they accept as correct and true... that's how they define reality.",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 54,
+    "quote": "A ninja must see underneath the underneath.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 55,
+    "quote": "I'm not perfect, but I am always me.",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 56,
+    "quote": "Wake up to reality! Nothing ever goes as planned in this accursed world. The longer you live, the more you realize that the only things that truly exist in this reality are merely pain, suffering and futility.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 57,
+    "quote": "When a man learns to love, he must bear the risk of hatred.",
+    "anime": "Naruto Shippuden",
+    "character": "Obito Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 58,
+    "quote": "The true power of the Sharingan... isn't just copying jutsu. It's seeing through all lies and understanding the truth of this world.",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 59,
+    "quote": "I will never stop believing in my own ninja way!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 60,
+    "quote": "In this world, wherever there is light - there are also shadows. As long as the concept of winners exists, there must also be losers.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 61,
+    "quote": "Power is not will, it is the phenomenon of physically making things happen.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 62,
+    "quote": "The Uchiha is a clan destined for revenge. Even if that revenge... is against their own blood.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 63,
+    "quote": "The concept of hope is nothing more than giving up. A word that holds no true meaning in this world.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 64,
+    "quote": "True loneliness is being in a room full of people and still feeling alone.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 65,
+    "quote": "The difference between a novice and a master is that the master has failed more times than the novice has tried.",
+    "anime": "Naruto Shippuden",
+    "character": "Jiraiya",
+    "language": "en"
+  },
+  {
+    "id": 66,
+    "quote": "This cursed world... the cycle of hatred... I will break it!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 67,
+    "quote": "The moment people come to know love, they run the risk of carrying hate. And hate is what creates sacrifice.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 68,
+    "quote": "I never go back on my word! That's my nindo, my ninja way!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 69,
+    "quote": "There is no such thing as hope in battle. There is only absolute despair born from the collective consciousness of humanity.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 70,
+    "quote": "The Infinite Tsukuyomi will finally bring peace to this world. An end to the cursed cycle of hatred.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 71,
+    "quote": "A ninja's life is not measured by how they lived but rather what they accomplished before their death.",
+    "anime": "Naruto Shippuden",
+    "character": "Deidara",
+    "language": "en"
+  },
+  {
+    "id": 72,
+    "quote": "The secret technique of every shinobi... is to never give up!",
+    "anime": "Naruto Shippuden",
+    "character": "Might Guy",
+    "language": "en"
+  },
+  {
+    "id": 73,
+    "quote": "If you want to change, start by changing yourself first.",
+    "anime": "Naruto Shippuden",
+    "character": "Shikamaru Nara",
+    "language": "en"
+  },
+  {
+    "id": 74,
+    "quote": "Even the strongest of opponents always has a weakness.",
+    "anime": "Naruto Shippuden",
+    "character": "Neji Hyuga",
+    "language": "en"
+  },
+  {
+    "id": 75,
+    "quote": "I will never allow comrades to kill each other on my watch!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 76,
+    "quote": "Art is a blast! It is fleeting beauty!",
+    "anime": "Naruto Shippuden",
+    "character": "Deidara",
+    "language": "en"
+  },
+  {
+    "id": 77,
+    "quote": "The flower that blooms in adversity is the most rare and beautiful of all.",
+    "anime": "Naruto Shippuden",
+    "character": "Tsunade",
+    "language": "en"
+  },
+  {
+    "id": 78,
+    "quote": "When you have something important to protect, that's when you can become truly strong.",
+    "anime": "Naruto Shippuden",
+    "character": "Zabuza Momochi",
+    "language": "en"
+  },
+  {
+    "id": 79,
+    "quote": "The darkness in people's hearts... that's what true ugliness is.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 80,
+    "quote": "In this world, there is no such thing as a painless lesson.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 81,
+    "quote": "A heart filled with revenge has no room for love.",
+    "anime": "Naruto Shippuden",
+    "character": "Sakura Haruno",
+    "language": "en"
+  },
+  {
+    "id": 82,
+    "quote": "True strength isn't about winning battles. It's about protecting what matters most.",
+    "anime": "Naruto Shippuden",
+    "character": "Hinata Hyuga",
+    "language": "en"
+  },
+  {
+    "id": 83,
+    "quote": "The will of fire will never be extinguished!",
+    "anime": "Naruto Shippuden",
+    "character": "Hashirama Senju",
+    "language": "en"
+  },
+  {
+    "id": 84,
+    "quote": "There's no advantage in hurrying through life.",
+    "anime": "Naruto Shippuden",
+    "character": "Shikamaru Nara",
+    "language": "en"
+  },
+  {
+    "id": 85,
+    "quote": "A shinobi's weapon is their heart!",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 86,
+    "quote": "If you don't like your destiny, don't accept it. Have the courage to change it!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 87,
+    "quote": "To become Hokage is my dream!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 88,
+    "quote": "The strongest poison is hatred.",
+    "anime": "Naruto Shippuden",
+    "character": "Chiyo",
+    "language": "en"
+  },
+  {
+    "id": 89,
+    "quote": "In society, those who don't have many abilities, often complain more.",
+    "anime": "Naruto Shippuden",
+    "character": "Sai",
+    "language": "en"
+  },
+  {
+    "id": 90,
+    "quote": "The eyes that see darkness and the hands that feel pain will someday create light.",
+    "anime": "Naruto Shippuden",
+    "character": "Nagato",
+    "language": "en"
+  },
+  {
+    "id": 91,
+    "quote": "A life without purpose is no life at all.",
+    "anime": "Naruto Shippuden",
+    "character": "Kisame Hoshigaki",
+    "language": "en"
+  },
+  {
+    "id": 92,
+    "quote": "We fight not to kill, but to protect the precious lives around us.",
+    "anime": "Naruto Shippuden",
+    "character": "Minato Namikaze",
+    "language": "en"
+  },
+  {
+    "id": 93,
+    "quote": "The hardest choices require the strongest wills.",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 94,
+    "quote": "True change cannot be made if it is bound by laws and limitations, predictions and imagination.",
+    "anime": "Naruto Shippuden",
+    "character": "Pain",
+    "language": "en"
+  },
+  {
+    "id": 95,
+    "quote": "The moment people come to understand each other, the world will finally know peace.",
+    "anime": "Naruto Shippuden",
+    "character": "Yahiko",
+    "language": "en"
+  },
+  {
+    "id": 96,
+    "quote": "A life without sacrifice is one without meaning.",
+    "anime": "Naruto Shippuden",
+    "character": "Orochimaru",
+    "language": "en"
+  },
+  {
+    "id": 97,
+    "quote": "In the end, power is the only real virtue... and weakness, the only vice.",
+    "anime": "Naruto Shippuden",
+    "character": "Madara Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 98,
+    "quote": "The path to peace is paved with sacrifices.",
+    "anime": "Naruto Shippuden",
+    "character": "Tobirama Senju",
+    "language": "en"
+  },
+  {
+    "id": 99,
+    "quote": "Even if I die, I will always be Hokage!",
+    "anime": "Naruto Shippuden",
+    "character": "Hiruzen Sarutobi",
+    "language": "en"
+  },
+  {
+    "id": 100,
+    "quote": "Believe it!",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 101,
+    "quote": "The longer the shadow is cast, the brighter the light must be.",
+    "anime": "Naruto Shippuden",
+    "character": "Hiruzen Sarutobi",
+    "language": "en"
+  },
+  {
+    "id": 102,
+    "quote": "A true master is an eternal student.",
+    "anime": "Naruto Shippuden",
+    "character": "Might Guy",
+    "language": "en"
+  },
+  {
+    "id": 103,
+    "quote": "Those who break the rules are scum, but those who abandon their friends are worse than scum.",
+    "anime": "Naruto Shippuden",
+    "character": "Obito Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 104,
+    "quote": "The power of one person isn't enough to change anything. That's why we need to accept help from others.",
+    "anime": "Naruto Shippuden",
+    "character": "Shikamaru Nara",
+    "language": "en"
+  },
+  {
+    "id": 105,
+    "quote": "A wound that's never healed... that's what hatred is.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 106,
+    "quote": "When you protect someone precious to you, you gain true strength.",
+    "anime": "Naruto Shippuden",
+    "character": "Zabuza Momochi",
+    "language": "en"
+  },
+  {
+    "id": 107,
+    "quote": "My pain is far greater than yours!",
+    "anime": "Naruto Shippuden",
+    "character": "Nagato",
+    "language": "en"
+  },
+  {
+    "id": 108,
+    "quote": "The true battle begins only after you've been pushed to your limits.",
+    "anime": "Naruto Shippuden",
+    "character": "Kakashi Hatake",
+    "language": "en"
+  },
+  {
+    "id": 109,
+    "quote": "A dream isn't something you see when you're asleep. It's something that won't let you sleep.",
+    "anime": "Naruto Shippuden",
+    "character": "Rock Lee",
+    "language": "en"
+  },
+  {
+    "id": 110,
+    "quote": "The world is full of hatred and pain. But I believe peace will come someday.",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 111,
+    "quote": "Power comes not from capacity, but from indomitable will.",
+    "anime": "Naruto Shippuden",
+    "character": "Itachi Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 112,
+    "quote": "When you lose sight of your path, listen for the destination in your heart.",
+    "anime": "Naruto Shippuden",
+    "character": "Hagoromo Ōtsutsuki",
+    "language": "en"
+  },
+  {
+    "id": 113,
+    "quote": "The shinobi world is ruled by hatred. But I will break that cycle.",
+    "anime": "Naruto Shippuden",
+    "character": "Naruto Uzumaki",
+    "language": "en"
+  },
+  {
+    "id": 114,
+    "quote": "The art of medicine consists of amusing the patient while nature cures the disease.",
+    "anime": "Naruto Shippuden",
+    "character": "Tsunade",
+    "language": "en"
+  },
+  {
+    "id": 115,
+    "quote": "The darkness of the night makes the stars shine brighter.",
+    "anime": "Naruto Shippuden",
+    "character": "Hashirama Senju",
+    "language": "en"
+  },
+  {
+    "id": 116,
+    "quote": "If you don't understand others, you can't truly understand yourself.",
+    "anime": "Naruto Shippuden",
+    "character": "Jiraiya",
+    "language": "en"
+  },
+  {
+    "id": 117,
+    "quote": "The moment you think of giving up, think of the reason why you held on so long.",
+    "anime": "Naruto Shippuden",
+    "character": "Neji Hyuga",
+    "language": "en"
+  },
+  {
+    "id": 118,
+    "quote": "Your words cut deeper than any blade.",
+    "anime": "Naruto Shippuden",
+    "character": "Sasuke Uchiha",
+    "language": "en"
+  },
+  {
+    "id": 119,
+    "quote": "A leader must walk ahead of his people, showing them the way through his example.",
+    "anime": "Naruto Shippuden",
+    "character": "Gaara",
+    "language": "en"
+  },
+  {
+    "id": 120,
+    "quote": "The future is not a path, but a choice.",
+    "anime": "Naruto Shippuden",
+    "character": "Minato Namikaze",
+    "language": "en"
+  },
+  {
+    "id": 121,
+    "quote": "If you win, you live. If you lose, you die. If you don't fight, you can't win!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 122,
+    "quote": "This world is cruel... but also beautiful.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 123,
+    "quote": "The world is merciless, and it's also very beautiful.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 124,
+    "quote": "Someone who can't sacrifice anything can't change anything.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 125,
+    "quote": "Give up on your dreams and die.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 126,
+    "quote": "I'm the same as you. I've always hated myself. Born into this world... I've never been able to forgive myself for just being alive.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 127,
+    "quote": "The only thing we're allowed to do is believe that we won't regret the choice we made.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 128,
+    "quote": "I don't know which option you should choose. I'll leave the decision to you. But whatever you choose... be prepared to accept the consequences.",
+    "anime": "Attack on Titan",
+    "character": "Erwin Smith",
+    "language": "en"
+  },
+  {
+    "id": 129,
+    "quote": "I was born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 130,
+    "quote": "We're all free. As far as we're concerned, we're the most free soldiers in the world.",
+    "anime": "Attack on Titan",
+    "character": "Hange Zoë",
+    "language": "en"
+  },
+  {
+    "id": 131,
+    "quote": "I keep moving forward... until my enemies are destroyed.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 132,
+    "quote": "The only way to truly defeat someone is to understand them.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 133,
+    "quote": "If you don't fight, you can't win!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 134,
+    "quote": "I'm going to kill every last one of those animals!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 135,
+    "quote": "I don't want to die... because I was born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 136,
+    "quote": "Humanity will never stop fighting itself until there's only one human... or fewer left.",
+    "anime": "Attack on Titan",
+    "character": "Kenny Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 137,
+    "quote": "Everyone had to be drunk on something to keep pushing on.",
+    "anime": "Attack on Titan",
+    "character": "Erwin Smith",
+    "language": "en"
+  },
+  {
+    "id": 138,
+    "quote": "I don't know what's right anymore. But I know I must keep moving forward.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 139,
+    "quote": "This is a story. A story you started. Isn't it, Eren?",
+    "anime": "Attack on Titan",
+    "character": "Zeke Yeager",
+    "language": "en"
+  },
+  {
+    "id": 140,
+    "quote": "We are all slaves to something.",
+    "anime": "Attack on Titan",
+    "character": "Kenny Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 141,
+    "quote": "I'm just a normal girl who learned how to fight.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 142,
+    "quote": "The only truth in this world is that there is no truth.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 143,
+    "quote": "To save humanity, we must abandon our humanity.",
+    "anime": "Attack on Titan",
+    "character": "Dot Pixis",
+    "language": "en"
+  },
+  {
+    "id": 144,
+    "quote": "The difference between a god and a devil is in which side wins.",
+    "anime": "Attack on Titan",
+    "character": "Hange Zoë",
+    "language": "en"
+  },
+  {
+    "id": 145,
+    "quote": "I don't want to be a god. I just want to destroy my enemies.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 146,
+    "quote": "If you begin to regret, you'll dull your future decisions and let others make your choices for you.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 147,
+    "quote": "I'm the same as you. I've always hated myself.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 148,
+    "quote": "When people are faced with something truly terrifying, their hearts freeze over.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 149,
+    "quote": "The enemy of humanity is beyond these walls. And it's us.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 150,
+    "quote": "I'm free...",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 151,
+    "quote": "No one knows what the outcome will be. So choose whatever you'll regret the least.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 152,
+    "quote": "We haven't even seen the ocean yet.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 153,
+    "quote": "I'm not going to die. Not until I see what's outside these walls.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 154,
+    "quote": "Fight! Win! Fight! Win!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 155,
+    "quote": "I'm the armored Titan and he's the colossal Titan.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 156,
+    "quote": "The only thing we can do is keep moving forward.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 157,
+    "quote": "I'm the same as you. I've been burdened with the fate of being an Eldian.",
+    "anime": "Attack on Titan",
+    "character": "Zeke Yeager",
+    "language": "en"
+  },
+  {
+    "id": 158,
+    "quote": "You can't change anything unless you can discard part of yourself too.",
+    "anime": "Attack on Titan",
+    "character": "Kenny Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 159,
+    "quote": "I'll wrap that scarf around you as many times as you want!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 160,
+    "quote": "Dedicate your heart!",
+    "anime": "Attack on Titan",
+    "character": "Survey Corps",
+    "language": "en"
+  },
+  {
+    "id": 161,
+    "quote": "If we kill all our enemies over there... will we finally be free?",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 162,
+    "quote": "The world is a cruel place. But it's also very beautiful.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 163,
+    "quote": "I'm going to exterminate every last Titan on this earth.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 164,
+    "quote": "The only way to win is to fight.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 165,
+    "quote": "I don't want to die. I'm not ready to die yet.",
+    "anime": "Attack on Titan",
+    "character": "Sasha Blouse",
+    "language": "en"
+  },
+  {
+    "id": 166,
+    "quote": "I was so wrong. There are no good guys in this world.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 167,
+    "quote": "I'm just a kid who didn't know anything.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 168,
+    "quote": "If you don't fight, you can't survive!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 169,
+    "quote": "We are the same. Both of us were born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 170,
+    "quote": "I don't want to be a pawn anymore.",
+    "anime": "Attack on Titan",
+    "character": "Historia Reiss",
+    "language": "en"
+  },
+  {
+    "id": 171,
+    "quote": "The only thing we're allowed to believe is that we won't regret the choice we made.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 172,
+    "quote": "I have no regrets. I was born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Grisha Yeager",
+    "language": "en"
+  },
+  {
+    "id": 173,
+    "quote": "I'll keep moving forward. Until I destroy the enemies.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 174,
+    "quote": "You can't hope for a horror story with a happy ending.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 175,
+    "quote": "The only thing left for us is to fight!",
+    "anime": "Attack on Titan",
+    "character": "Erwin Smith",
+    "language": "en"
+  },
+  {
+    "id": 176,
+    "quote": "I'm going to end this cycle of hatred.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 177,
+    "quote": "I'm free. No matter what happens, I am free.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 178,
+    "quote": "I'm sorry. I'm not going to die. I can't die yet.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 179,
+    "quote": "This is freedom.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 180,
+    "quote": "We haven't been given the right to give up.",
+    "anime": "Attack on Titan",
+    "character": "Erwin Smith",
+    "language": "en"
+  },
+  {
+    "id": 181,
+    "quote": "I was born this way. Right into this cruel world.",
+    "anime": "Attack on Titan",
+    "character": "Ymir",
+    "language": "en"
+  },
+  {
+    "id": 182,
+    "quote": "I'll take the freedom back from you with my own hands.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 183,
+    "quote": "The only thing we can do is move forward.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 184,
+    "quote": "I'm not your enemy. I never was.",
+    "anime": "Attack on Titan",
+    "character": "Annie Leonhart",
+    "language": "en"
+  },
+  {
+    "id": 185,
+    "quote": "I'm going to put an end to this world.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 186,
+    "quote": "We are all slaves to freedom.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 187,
+    "quote": "I'll keep moving forward. Until I destroy my enemies.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 188,
+    "quote": "I want to see and understand the world outside.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 189,
+    "quote": "This is the story you started.",
+    "anime": "Attack on Titan",
+    "character": "Zeke Yeager",
+    "language": "en"
+  },
+  {
+    "id": 190,
+    "quote": "We have to keep moving forward, even if we die. Even after we die.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 191,
+    "quote": "I'll give up on my dream and die for you.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 192,
+    "quote": "The freedom to live is the freedom to die.",
+    "anime": "Attack on Titan",
+    "character": "Kenny Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 193,
+    "quote": "I'll kill them all. Every last one of those animals that's on this earth.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 194,
+    "quote": "This is the path we've chosen. There's no turning back now.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 195,
+    "quote": "I'll destroy the entire world.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 196,
+    "quote": "We are the same. You and I are the same.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 197,
+    "quote": "I'm going to put an end to this war.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 198,
+    "quote": "This is the only way.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 199,
+    "quote": "I was born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Historia Reiss",
+    "language": "en"
+  },
+  {
+    "id": 200,
+    "quote": "We are free.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 201,
+    "quote": "I'll keep moving forward. Until I reach that scenery.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 202,
+    "quote": "The world is cruel, but I still love you.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 203,
+    "quote": "I'll wrap that scarf around you forever.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 204,
+    "quote": "This is freedom. This is what I wanted.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 205,
+    "quote": "I'll destroy it all. Every last bit of this cursed world.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 206,
+    "quote": "We are all special. Because we were all born into this world.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 207,
+    "quote": "I'll keep moving forward. Until I see that sight.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 208,
+    "quote": "This is the story of us. The story of Attack on Titan.",
+    "anime": "Attack on Titan",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 209,
+    "quote": "I was born into this world. I am free.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 210,
+    "quote": "I'll see you later, Eren.",
+    "anime": "Attack on Titan",
+    "character": "Mikasa Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 211,
+    "quote": "This is the choice I've made.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 212,
+    "quote": "I'll keep moving forward. Until I destroy everything.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 213,
+    "quote": "The only salvation left for us is to fight.",
+    "anime": "Attack on Titan",
+    "character": "Erwin Smith",
+    "language": "en"
+  },
+  {
+    "id": 214,
+    "quote": "I'll take your freedom away.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 215,
+    "quote": "This is the price of freedom.",
+    "anime": "Attack on Titan",
+    "character": "Levi Ackerman",
+    "language": "en"
+  },
+  {
+    "id": 216,
+    "quote": "I'll see this through to the end.",
+    "anime": "Attack on Titan",
+    "character": "Armin Arlert",
+    "language": "en"
+  },
+  {
+    "id": 217,
+    "quote": "We are all victims of this cruel world.",
+    "anime": "Attack on Titan",
+    "character": "Reiner Braun",
+    "language": "en"
+  },
+  {
+    "id": 218,
+    "quote": "I'll keep moving forward. Until I reach freedom.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 219,
+    "quote": "This is the only way to save humanity.",
+    "anime": "Attack on Titan",
+    "character": "Zeke Yeager",
+    "language": "en"
+  },
+  {
+    "id": 220,
+    "quote": "I'll destroy every last Titan.",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager",
+    "language": "en"
+  },
+  {
+    "id": 220,
+    "quote": "I don't want to conquer anything. I just think the guy with the most freedom in this whole ocean is the Pirate King!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 221,
+    "quote": "When do you think people die? When they are shot through the heart? No. When they are ravaged by an incurable disease? No. It's when they are forgotten.",
+    "anime": "One Piece",
+    "character": "Dr. Hiriluk",
+    "language": "en"
+  },
+  {
+    "id": 222,
+    "quote": "If I die fighting, then I die fighting.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 223,
+    "quote": "A man's dream will never die!",
+    "anime": "One Piece",
+    "character": "Marshall D. Teach",
+    "language": "en"
+  },
+  {
+    "id": 224,
+    "quote": "Hero? No! We're pirates! I love heroes but I don't wanna be one! Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it but heroes will share it with other people. I want all the meat!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 225,
+    "quote": "When you decided to go to sea, it was your own decision! Whatever happens to you out there, it's your responsibility!",
+    "anime": "One Piece",
+    "character": "Shanks",
+    "language": "en"
+  },
+  {
+    "id": 226,
+    "quote": "I don't care what society says. I've never regretted doing anything. I will survive and do what I want to.",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 227,
+    "quote": "The weak don't get to decide anything. Not even how they die.",
+    "anime": "One Piece",
+    "character": "Trafalgar D. Water Law",
+    "language": "en"
+  },
+  {
+    "id": 228,
+    "quote": "Power isn't determined by your size, but the size of your heart and dreams!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 229,
+    "quote": "I'm not a hero because I want your praise. I do what I do because I want to!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 230,
+    "quote": "Death is never an apology!",
+    "anime": "One Piece",
+    "character": "Brook",
+    "language": "en"
+  },
+  {
+    "id": 231,
+    "quote": "If you don't take risks, you can't create a future!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 232,
+    "quote": "A scar on the back is a swordsman's shame.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 233,
+    "quote": "No matter how deep the night, it always turns to day, eventually.",
+    "anime": "One Piece",
+    "character": "Brook",
+    "language": "en"
+  },
+  {
+    "id": 234,
+    "quote": "Someday, I'll build a ship that can conquer any ocean, and we'll sail around the world together!",
+    "anime": "One Piece",
+    "character": "Franky",
+    "language": "en"
+  },
+  {
+    "id": 235,
+    "quote": "The world isn't perfect, but it's there for us, doing the best it can... that's what makes it so damn beautiful!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 236,
+    "quote": "It's not about whether I can or I can't. I have to do it!",
+    "anime": "One Piece",
+    "character": "Tony Tony Chopper",
+    "language": "en"
+  },
+  {
+    "id": 237,
+    "quote": "People's dreams... have no ends!",
+    "anime": "One Piece",
+    "character": "Marshall D. Teach",
+    "language": "en"
+  },
+  {
+    "id": 238,
+    "quote": "Being alone is more painful than getting hurt.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 239,
+    "quote": "I want to live! Take me out to sea with you!",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 240,
+    "quote": "A man forgives only when he is in the wrong.",
+    "anime": "One Piece",
+    "character": "Sanji",
+    "language": "en"
+  },
+  {
+    "id": 241,
+    "quote": "The only thing you can do is keep moving forward.",
+    "anime": "One Piece",
+    "character": "Jinbe",
+    "language": "en"
+  },
+  {
+    "id": 242,
+    "quote": "If you can't even protect your captain, then your ambition is worthless!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 243,
+    "quote": "When does a man die? When he is hit by a bullet? No. When he suffers a disease? No. When he eats a soup made of a poisonous mushroom? No! A man dies when he is forgotten!",
+    "anime": "One Piece",
+    "character": "Dr. Hiriluk",
+    "language": "en"
+  },
+  {
+    "id": 244,
+    "quote": "Justice will prevail, you say? But of course it will! Whoever wins this war becomes justice!",
+    "anime": "One Piece",
+    "character": "Donquixote Doflamingo",
+    "language": "en"
+  },
+  {
+    "id": 245,
+    "quote": "I'll become the greatest swordsman in the world! All I have to do is win against you!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 246,
+    "quote": "There comes a time when a man must stand and fight! That time is when his friends' dreams are laughed at!",
+    "anime": "One Piece",
+    "character": "Usopp",
+    "language": "en"
+  },
+  {
+    "id": 247,
+    "quote": "The weak don't have the right to choose how they die.",
+    "anime": "One Piece",
+    "character": "Sir Crocodile",
+    "language": "en"
+  },
+  {
+    "id": 248,
+    "quote": "It may be hard right now, but you must silence those thoughts! Stop counting only those things that you have lost! What is gone, is gone! So ask yourself this: What is there... that still remains to you?!",
+    "anime": "One Piece",
+    "character": "Jinbe",
+    "language": "en"
+  },
+  {
+    "id": 249,
+    "quote": "I don't care about the treasure, but I want to know where he found it all! The end of the Grand Line! I want to know what the One Piece is!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 250,
+    "quote": "The era calls me!",
+    "anime": "One Piece",
+    "character": "Edward Newgate",
+    "language": "en"
+  },
+  {
+    "id": 251,
+    "quote": "No matter how many weapons you have, no matter how great your physical strength may be, the world is ruled by those with courage.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 252,
+    "quote": "The weak don't get to choose how they die.",
+    "anime": "One Piece",
+    "character": "Trafalgar D. Water Law",
+    "language": "en"
+  },
+  {
+    "id": 253,
+    "quote": "If I can't even protect my captain's dream, then whatever ambition I have is nothing but talk! Luffy must be the man who becomes the Pirate King!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 254,
+    "quote": "I have my crew, I don't need to know how to navigate!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 255,
+    "quote": "The world is vast... and someday, you'll meet comrades who will protect you!",
+    "anime": "One Piece",
+    "character": "Jinbe",
+    "language": "en"
+  },
+  {
+    "id": 256,
+    "quote": "The government says your existence is a crime, but no matter what kind of weapons you may hold, just being alive isn't a sin!",
+    "anime": "One Piece",
+    "character": "Franky",
+    "language": "en"
+  },
+  {
+    "id": 257,
+    "quote": "If you don't risk your life, you can't create a future.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 258,
+    "quote": "I'm not gonna die, partner. I made a promise that I'd never die.",
+    "anime": "One Piece",
+    "character": "Portgas D. Ace",
+    "language": "en"
+  },
+  {
+    "id": 259,
+    "quote": "I don't care about the bloodline! Ace is Ace!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 260,
+    "quote": "To be truthful, I don't want to be a hero! Because in a feast of heroes, I want to have the meat!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 261,
+    "quote": "The sea is a vast expanse... I recommend you don't fight it.",
+    "anime": "One Piece",
+    "character": "Dracule Mihawk",
+    "language": "en"
+  },
+  {
+    "id": 262,
+    "quote": "I will surpass you! Wait for me at the top!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 263,
+    "quote": "Even if I die trying, I will never give up!",
+    "anime": "One Piece",
+    "character": "Tony Tony Chopper",
+    "language": "en"
+  },
+  {
+    "id": 264,
+    "quote": "I don't care what the world calls me. I'm only going to be me.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 265,
+    "quote": "The weak don't get to choose anything. Not even their own deaths.",
+    "anime": "One Piece",
+    "character": "Donquixote Doflamingo",
+    "language": "en"
+  },
+  {
+    "id": 266,
+    "quote": "I'll never lose again! Is that okay with you... Pirate King?!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 267,
+    "quote": "When you're at sea, you fight against pirates!",
+    "anime": "One Piece",
+    "character": "Nami",
+    "language": "en"
+  },
+  {
+    "id": 268,
+    "quote": "I don't want to conquer anything. It's just that the person with the most freedom on the sea is the Pirate King.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 269,
+    "quote": "You can pour drinks on me, you can throw food at me, you can even spit on me. I'll just laugh that stuff off. But... good reason or not... nobody hurts a friend of mine!",
+    "anime": "One Piece",
+    "character": "Sanji",
+    "language": "en"
+  },
+  {
+    "id": 270,
+    "quote": "I'll do what you can't do, and you do what I can't do.",
+    "anime": "One Piece",
+    "character": "Sanji",
+    "language": "en"
+  },
+  {
+    "id": 271,
+    "quote": "I've decided to live for my own sake. So I'm not afraid of anything anymore.",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 272,
+    "quote": "The Pirate King is the freest man on the sea!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 273,
+    "quote": "If I give up now, I'm going to regret it.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 274,
+    "quote": "I want to find All Blue!",
+    "anime": "One Piece",
+    "character": "Sanji",
+    "language": "en"
+  },
+  {
+    "id": 275,
+    "quote": "I'm going to be the world's greatest swordsman!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 276,
+    "quote": "I'm going to be the Pirate King!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 277,
+    "quote": "I'm going to draw a map of the entire world!",
+    "anime": "One Piece",
+    "character": "Nami",
+    "language": "en"
+  },
+  {
+    "id": 278,
+    "quote": "I'm going to be a brave warrior of the sea!",
+    "anime": "One Piece",
+    "character": "Usopp",
+    "language": "en"
+  },
+  {
+    "id": 279,
+    "quote": "I'm going to be the greatest doctor in the world!",
+    "anime": "One Piece",
+    "character": "Tony Tony Chopper",
+    "language": "en"
+  },
+  {
+    "id": 280,
+    "quote": "I'm going to find the Rio Poneglyph!",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 281,
+    "quote": "I'm going to build a ship that can sail to the end of the world!",
+    "anime": "One Piece",
+    "character": "Franky",
+    "language": "en"
+  },
+  {
+    "id": 282,
+    "quote": "I'm going to reunite with Laboon!",
+    "anime": "One Piece",
+    "character": "Brook",
+    "language": "en"
+  },
+  {
+    "id": 283,
+    "quote": "I'm going to fulfill my captain's dream!",
+    "anime": "One Piece",
+    "character": "Jinbe",
+    "language": "en"
+  },
+  {
+    "id": 284,
+    "quote": "I want to see the world with my own eyes!",
+    "anime": "One Piece",
+    "character": "Bell-mère",
+    "language": "en"
+  },
+  {
+    "id": 285,
+    "quote": "The Will of D. will never die!",
+    "anime": "One Piece",
+    "character": "Jaguar D. Saul",
+    "language": "en"
+  },
+  {
+    "id": 286,
+    "quote": "Inherited Will. The Destiny of the Age. The Dreams of the People. As long as people continue to pursue the meaning of freedom, these things will never cease to be!",
+    "anime": "One Piece",
+    "character": "Gol D. Roger",
+    "language": "en"
+  },
+  {
+    "id": 287,
+    "quote": "If you lose credibility by just admitting fault, then you didn't have any in the first place.",
+    "anime": "One Piece",
+    "character": "Fujitora",
+    "language": "en"
+  },
+  {
+    "id": 288,
+    "quote": "The weak cannot choose the method of their death.",
+    "anime": "One Piece",
+    "character": "Sir Crocodile",
+    "language": "en"
+  },
+  {
+    "id": 289,
+    "quote": "Destiny. Fate. Dreams. These unstoppable ideals are held deep in the heart of man.",
+    "anime": "One Piece",
+    "character": "Gol D. Roger",
+    "language": "en"
+  },
+  {
+    "id": 290,
+    "quote": "I don't know who you are, but if you make my crew cry, I will never forgive you!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 291,
+    "quote": "It's okay to lose your way... just don't lose sight of what you have decided.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 292,
+    "quote": "A man's dream never dies!",
+    "anime": "One Piece",
+    "character": "Marshall D. Teach",
+    "language": "en"
+  },
+  {
+    "id": 293,
+    "quote": "If you can't even protect your captain, then your ambition means nothing.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 294,
+    "quote": "The era is waiting for our answer!",
+    "anime": "One Piece",
+    "character": "Edward Newgate",
+    "language": "en"
+  },
+  {
+    "id": 295,
+    "quote": "I'll take a thousand of your punches for ten seconds with my friends!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 296,
+    "quote": "This pain... is nothing compared to what my crew is going through!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 297,
+    "quote": "I'm not a hero. I'm a pirate!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 298,
+    "quote": "When the world shoves you around, you just gotta stand up and shove back. It's not like somebody's gonna save you if you start babbling excuses.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 299,
+    "quote": "I want to live!",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 300,
+    "quote": "I still have my crew!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 301,
+    "quote": "The weak don't get to decide anything! Not even how they die!",
+    "anime": "One Piece",
+    "character": "Trafalgar D. Water Law",
+    "language": "en"
+  },
+  {
+    "id": 302,
+    "quote": "I don't care about the World Government! I don't care about being a criminal! I don't care what happens to me! Because... because... I want to live!",
+    "anime": "One Piece",
+    "character": "Nico Robin",
+    "language": "en"
+  },
+  {
+    "id": 303,
+    "quote": "Shut up! Let's go!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 304,
+    "quote": "I don't know how to use a sword. I don't know how to navigate either. I can't cook. And I can't tell lies. But I can beat you!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 305,
+    "quote": "I don't care about your past. When we decide to be your friends, it's for life.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 306,
+    "quote": "When I decided to follow my dream, I had already discarded my life.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 307,
+    "quote": "I don't care what the world thinks of me. I'm only going to be me.",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 308,
+    "quote": "I'll become even greater than you! And I'll do it without using underhanded tricks!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 309,
+    "quote": "The sea is calling me!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 310,
+    "quote": "I'm going to be the Pirate King! I don't care if I die trying!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 311,
+    "quote": "I'll never run away and I'll never lose to anyone!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 312,
+    "quote": "I don't care about the treasure, but I want to know where he found it all! The end of the Grand Line! I want to know what the One Piece is!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 313,
+    "quote": "I'll protect them! No matter what happens!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 314,
+    "quote": "The only gods in this world are us!",
+    "anime": "One Piece",
+    "character": "Enel",
+    "language": "en"
+  },
+  {
+    "id": 315,
+    "quote": "I'll never die!",
+    "anime": "One Piece",
+    "character": "Edward Newgate",
+    "language": "en"
+  },
+  {
+    "id": 316,
+    "quote": "The world isn't perfect, but it's beautiful.",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 317,
+    "quote": "I don't care if I die trying! As long as I die trying, that's fine with me!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 318,
+    "quote": "If I can't even protect my captain's dream, then whatever ambition I have is nothing but talk!",
+    "anime": "One Piece",
+    "character": "Roronoa Zoro",
+    "language": "en"
+  },
+  {
+    "id": 319,
+    "quote": "The Pirate King is the freest person on the seas!",
+    "anime": "One Piece",
+    "character": "Monkey D. Luffy",
+    "language": "en"
+  },
+  {
+    "id": 320,
+    "quote": "Power comes in response to a need, not a desire. You have to create that need.",
+    "anime": "Dragon Ball",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 321,
+    "quote": "It's not about being the best. It's about being better than you were yesterday.",
+    "anime": "Dragon Ball",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 322,
+    "quote": "I am the hope of the universe. I am the answer to all living things that cry out for peace.",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 323,
+    "quote": "Even the mightiest warriors experience fears. What makes them a true warrior is the courage that they possess to overcome their fears.",
+    "anime": "Dragon Ball Z",
+    "character": "Piccolo",
+    "language": "en"
+  },
+  {
+    "id": 324,
+    "quote": "I will not let you destroy my world!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 325,
+    "quote": "The power within you is greater than the power around you.",
+    "anime": "Dragon Ball",
+    "character": "Master Roshi",
+    "language": "en"
+  },
+  {
+    "id": 326,
+    "quote": "I fight for fun. I fight for those I care about. But I don't fight for hatred.",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 327,
+    "quote": "I am the prince of all Saiyans!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 328,
+    "quote": "You may have invaded my mind and my body, but there's one thing a Saiyan always keeps... his pride!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 329,
+    "quote": "I am neither Goku nor Vegeta. I am the one who will defeat you!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegito",
+    "language": "en"
+  },
+  {
+    "id": 330,
+    "quote": "I am the Legendary Super Saiyan!",
+    "anime": "Dragon Ball Z",
+    "character": "Broly",
+    "language": "en"
+  },
+  {
+    "id": 331,
+    "quote": "Strength is the only thing that matters in this world. Everything else is just a delusion for the weak.",
+    "anime": "Dragon Ball Super",
+    "character": "Jiren",
+    "language": "en"
+  },
+  {
+    "id": 332,
+    "quote": "You fool! This isn't even my final form!",
+    "anime": "Dragon Ball Z",
+    "character": "Frieza",
+    "language": "en"
+  },
+  {
+    "id": 333,
+    "quote": "I am the strongest in the universe!",
+    "anime": "Dragon Ball Z",
+    "character": "Frieza",
+    "language": "en"
+  },
+  {
+    "id": 334,
+    "quote": "Kakarot! You will never escape me! I am the hope of the universe! I am the light in the darkness!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 335,
+    "quote": "It's over 9000!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 336,
+    "quote": "I will surpass you... Kakarot! I swear it!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 337,
+    "quote": "You're not dealing with the average Saiyan warrior anymore!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 338,
+    "quote": "I am the Super Saiyan, Son Goku!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 339,
+    "quote": "You can destroy a planet, but you can't destroy me!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 340,
+    "quote": "I will never fight for revenge. I fight only for the sake of others.",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 341,
+    "quote": "I do not fear this new challenge. Rather like a true warrior, I will rise to meet it.",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 342,
+    "quote": "Might makes right! And I am mighty!",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 343,
+    "quote": "I am the Earth's martial arts champion! I don't need to prove myself to you!",
+    "anime": "Dragon Ball",
+    "character": "Tien Shinhan",
+    "language": "en"
+  },
+  {
+    "id": 344,
+    "quote": "I'm going to crush you... and throw you into the wind!",
+    "anime": "Dragon Ball Z",
+    "character": "Cell",
+    "language": "en"
+  },
+  {
+    "id": 345,
+    "quote": "I am neither good nor evil. I am simply the judge.",
+    "anime": "Dragon Ball Z",
+    "character": "Supreme Kai",
+    "language": "en"
+  },
+  {
+    "id": 346,
+    "quote": "Your overconfidence is your weakness.",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 347,
+    "quote": "I fight to protect everyone! That's why I'll never give up!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 348,
+    "quote": "I have no need for a world without Bulma.",
+    "anime": "Dragon Ball Super",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 349,
+    "quote": "I am the mightiest warrior in all the universe!",
+    "anime": "Dragon Ball Z",
+    "character": "Frieza",
+    "language": "en"
+  },
+  {
+    "id": 350,
+    "quote": "I am the perfect life form!",
+    "anime": "Dragon Ball Z",
+    "character": "Cell",
+    "language": "en"
+  },
+  {
+    "id": 351,
+    "quote": "I'm going to enjoy destroying you!",
+    "anime": "Dragon Ball Z",
+    "character": "Majin Buu",
+    "language": "en"
+  },
+  {
+    "id": 352,
+    "quote": "I am the god of destruction!",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 353,
+    "quote": "Your destruction is my pleasure.",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 354,
+    "quote": "I will fight to protect my family and my universe!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 355,
+    "quote": "I am Son Goku! I am a Saiyan from Earth!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 356,
+    "quote": "I've come this far... I can't give up now!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 357,
+    "quote": "I will not let anyone hurt my friends!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 358,
+    "quote": "I feel tremendous power... surging within me!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 359,
+    "quote": "I'm not a hero or a villain. I am the dessert!",
+    "anime": "Dragon Ball Z",
+    "character": "Majin Buu",
+    "language": "en"
+  },
+  {
+    "id": 360,
+    "quote": "This isn't a game! This is a fight for our lives!",
+    "anime": "Dragon Ball Z",
+    "character": "Piccolo",
+    "language": "en"
+  },
+  {
+    "id": 361,
+    "quote": "I've trained my whole life for this moment!",
+    "anime": "Dragon Ball",
+    "character": "Krillin",
+    "language": "en"
+  },
+  {
+    "id": 362,
+    "quote": "I am the Saiyan who came all the way from Earth for the sole purpose of defeating you.",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 363,
+    "quote": "I'm not going to hold back anymore!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 364,
+    "quote": "I will never forgive you for what you've done!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 365,
+    "quote": "I've had enough of your games!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 366,
+    "quote": "I am the strongest! And I will prove it!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 367,
+    "quote": "I will push beyond my limits!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 368,
+    "quote": "I am the hope of all living things!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 369,
+    "quote": "I will not run! I will fight!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 370,
+    "quote": "I've been waiting for this! A real challenge!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 371,
+    "quote": "I am the universe's strongest warrior!",
+    "anime": "Dragon Ball Super",
+    "character": "Jiren",
+    "language": "en"
+  },
+  {
+    "id": 372,
+    "quote": "I will defeat you with the power of a god!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 373,
+    "quote": "I am the legendary Super Saiyan God!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 374,
+    "quote": "I have no interest in ruling the universe. I only want to fight strong opponents!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 375,
+    "quote": "I will surpass even the gods!",
+    "anime": "Dragon Ball Super",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 376,
+    "quote": "I am the warrior you could never become!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 377,
+    "quote": "I will show you the power of a true Saiyan prince!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 378,
+    "quote": "I am not like Kakarot! I do not fight for fun!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 379,
+    "quote": "I will protect my planet!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 380,
+    "quote": "I have the power of a Super Saiyan!",
+    "anime": "Dragon Ball Z",
+    "character": "Trunks",
+    "language": "en"
+  },
+  {
+    "id": 381,
+    "quote": "I am the Saiyan of legend!",
+    "anime": "Dragon Ball Z",
+    "character": "Broly",
+    "language": "en"
+  },
+  {
+    "id": 382,
+    "quote": "I will not let anyone destroy my home!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 383,
+    "quote": "I am the strongest in the world!",
+    "anime": "Dragon Ball",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 384,
+    "quote": "I will avenge my people!",
+    "anime": "Dragon Ball Z",
+    "character": "Vegeta",
+    "language": "en"
+  },
+  {
+    "id": 385,
+    "quote": "I've reached a level beyond a Super Saiyan!",
+    "anime": "Dragon Ball Z",
+    "character": "Goku",
+    "language": "en"
+  },
+  {
+    "id": 386,
+    "quote": "I am the mightiest!",
+    "anime": "Dragon Ball Z",
+    "character": "Frieza",
+    "language": "en"
+  },
+  {
+    "id": 387,
+    "quote": "I will destroy you and everything you care about!",
+    "anime": "Dragon Ball Z",
+    "character": "Frieza",
+    "language": "en"
+  },
+  {
+    "id": 388,
+    "quote": "I have no equal!",
+    "anime": "Dragon Ball Super",
+    "character": "Jiren",
+    "language": "en"
+  },
+  {
+    "id": 389,
+    "quote": "I will achieve victory through absolute strength!",
+    "anime": "Dragon Ball Super",
+    "character": "Jiren",
+    "language": "en"
+  },
+  {
+    "id": 390,
+    "quote": "I am the universe's greatest assassin!",
+    "anime": "Dragon Ball Super",
+    "character": "Hit",
+    "language": "en"
+  },
+  {
+    "id": 391,
+    "quote": "I have never encountered an opponent like you before.",
+    "anime": "Dragon Ball Super",
+    "character": "Hit",
+    "language": "en"
+  },
+  {
+    "id": 392,
+    "quote": "I will show you the power of a god of destruction!",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 393,
+    "quote": "I am Whis, attendant to Lord Beerus.",
+    "anime": "Dragon Ball Super",
+    "character": "Whis",
+    "language": "en"
+  },
+  {
+    "id": 394,
+    "quote": "I will train you to become stronger than a god.",
+    "anime": "Dragon Ball Super",
+    "character": "Whis",
+    "language": "en"
+  },
+  {
+    "id": 395,
+    "quote": "I am Gohan! Son of Goku!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 396,
+    "quote": "I will unleash my full potential!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 397,
+    "quote": "I am the Great Saiyaman!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 398,
+    "quote": "I will protect the innocent!",
+    "anime": "Dragon Ball Z",
+    "character": "Gohan",
+    "language": "en"
+  },
+  {
+    "id": 399,
+    "quote": "I am Piccolo! Namekian warrior!",
+    "anime": "Dragon Ball Z",
+    "character": "Piccolo",
+    "language": "en"
+  },
+  {
+    "id": 400,
+    "quote": "I will not let you harm Gohan!",
+    "anime": "Dragon Ball Z",
+    "character": "Piccolo",
+    "language": "en"
+  },
+  {
+    "id": 401,
+    "quote": "I have fused with Kami to become a complete warrior!",
+    "anime": "Dragon Ball Z",
+    "character": "Piccolo",
+    "language": "en"
+  },
+  {
+    "id": 402,
+    "quote": "I am Android 18! And you're going to regret challenging me!",
+    "anime": "Dragon Ball Z",
+    "character": "Android 18",
+    "language": "en"
+  },
+  {
+    "id": 403,
+    "quote": "I may be an android, but I have feelings too!",
+    "anime": "Dragon Ball Z",
+    "character": "Android 18",
+    "language": "en"
+  },
+  {
+    "id": 404,
+    "quote": "I am the master of the Turtle School!",
+    "anime": "Dragon Ball",
+    "character": "Master Roshi",
+    "language": "en"
+  },
+  {
+    "id": 405,
+    "quote": "I have lived for centuries and trained many great warriors!",
+    "anime": "Dragon Ball",
+    "character": "Master Roshi",
+    "language": "en"
+  },
+  {
+    "id": 406,
+    "quote": "I am the guardian of Earth!",
+    "anime": "Dragon Ball Z",
+    "character": "Dende",
+    "language": "en"
+  },
+  {
+    "id": 407,
+    "quote": "I will heal the warriors and protect this planet!",
+    "anime": "Dragon Ball Z",
+    "character": "Dende",
+    "language": "en"
+  },
+  {
+    "id": 408,
+    "quote": "I am Bulma! The smartest woman in the world!",
+    "anime": "Dragon Ball",
+    "character": "Bulma",
+    "language": "en"
+  },
+  {
+    "id": 409,
+    "quote": "I invented the Dragon Radar!",
+    "anime": "Dragon Ball",
+    "character": "Bulma",
+    "language": "en"
+  },
+  {
+    "id": 410,
+    "quote": "I am King Kai! And I will train you to become stronger!",
+    "anime": "Dragon Ball Z",
+    "character": "King Kai",
+    "language": "en"
+  },
+  {
+    "id": 411,
+    "quote": "I have trained many great warriors!",
+    "anime": "Dragon Ball Z",
+    "character": "King Kai",
+    "language": "en"
+  },
+  {
+    "id": 412,
+    "quote": "I am the Grand Kai! The strongest in the afterlife!",
+    "anime": "Dragon Ball Z",
+    "character": "Grand Kai",
+    "language": "en"
+  },
+  {
+    "id": 413,
+    "quote": "I am the Supreme Kai! Guardian of the universe!",
+    "anime": "Dragon Ball Z",
+    "character": "Shin",
+    "language": "en"
+  },
+  {
+    "id": 414,
+    "quote": "I will protect the balance of the universe!",
+    "anime": "Dragon Ball Z",
+    "character": "Supreme Kai",
+    "language": "en"
+  },
+  {
+    "id": 415,
+    "quote": "I am Beerus! The God of Destruction!",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 416,
+    "quote": "I destroy planets for a living!",
+    "anime": "Dragon Ball Super",
+    "character": "Beerus",
+    "language": "en"
+  },
+  {
+    "id": 417,
+    "quote": "I am Whis! Angel attendant to Lord Beerus!",
+    "anime": "Dragon Ball Super",
+    "character": "Whis",
+    "language": "en"
+  },
+  {
+    "id": 418,
+    "quote": "I train gods for fun!",
+    "anime": "Dragon Ball Super",
+    "character": "Whis",
+    "language": "en"
+  },
+  {
+    "id": 419,
+    "quote": "I am Champa! God of Destruction of Universe 6!",
+    "anime": "Dragon Ball Super",
+    "character": "Champa",
+    "language": "en"
+  },
+  {
+    "id": 420,
+    "quote": "I am Vados! Angel attendant to Lord Champa!",
+    "anime": "Dragon Ball Super",
+    "character": "Vados",
+    "language": "en"
+  },
+  {
+    "id": 421,
+    "quote": "I am Zeno! The Omni-King!",
+    "anime": "Dragon Ball Super",
+    "character": "Zeno",
+    "language": "en"
+  },
+  {
+    "id": 422,
+    "quote": "I can erase entire universes with a thought!",
+    "anime": "Dragon Ball Super",
+    "character": "Zeno",
+    "language": "en"
+  },
+  {
+    "id": 423,
+    "quote": "I'm not your prey. You're mine.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 424,
+    "quote": "The weak have no rights or choices. Their only fate is to be trampled by the strong.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 425,
+    "quote": "Arise.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 426,
+    "quote": "I'll never kneel again. Not to anyone.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 427,
+    "quote": "The true hunter is the one who survives.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 428,
+    "quote": "Power isn't given. It's taken.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 429,
+    "quote": "Fear isn't in my vocabulary anymore.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 430,
+    "quote": "I will become stronger. No matter what it takes.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 431,
+    "quote": "The system chose me, but I choose my path.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 432,
+    "quote": "My shadows are my strength.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 433,
+    "quote": "I fight for those who can't.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 434,
+    "quote": "Kings don't need thrones when they have battlefields.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 435,
+    "quote": "Every dungeon is just another step toward my goal.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 436,
+    "quote": "The only approval I need is my own.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 437,
+    "quote": "I'll protect what's mine. That's my new weakness.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 438,
+    "quote": "My pain forged my resolve.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 439,
+    "quote": "Leveling up isn't just about power—it's about perspective.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 440,
+    "quote": "The hunter becomes the hunted.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 441,
+    "quote": "I don't need luck when I have determination.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 442,
+    "quote": "Strength without purpose is wasted.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 443,
+    "quote": "My shadows don't fear the light.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 444,
+    "quote": "The strongest chains are the ones we break ourselves.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 445,
+    "quote": "I'll rewrite my destiny with my own hands.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 446,
+    "quote": "Your limits are only illusions.",
+    "anime": "Solo Leveling",
+    "character": "System",
+    "language": "en"
+  },
+  {
+    "id": 447,
+    "quote": "A true hunter respects strength but values loyalty.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 448,
+    "quote": "Power is meaningless if it can't protect others.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 449,
+    "quote": "The measure of a hunter isn't in their rank, but in their resolve.",
+    "anime": "Solo Leveling",
+    "character": "Go Gunhee",
+    "language": "en"
+  },
+  {
+    "id": 450,
+    "quote": "Trust is the rarest resource in a dungeon.",
+    "anime": "Solo Leveling",
+    "character": "Choi Jong-In",
+    "language": "en"
+  },
+  {
+    "id": 451,
+    "quote": "Hyung-nim! I'll follow you anywhere!",
+    "anime": "Solo Leveling",
+    "character": "Yoo Jinho",
+    "language": "en"
+  },
+  {
+    "id": 452,
+    "quote": "Strength should serve humanity, not dominate it.",
+    "anime": "Solo Leveling",
+    "character": "Go Gunhee",
+    "language": "en"
+  },
+  {
+    "id": 453,
+    "quote": "The White Tiger Guild bows to no one.",
+    "anime": "Solo Leveling",
+    "character": "Baek Yoonho",
+    "language": "en"
+  },
+  {
+    "id": 454,
+    "quote": "For the Shadow Monarch!",
+    "anime": "Solo Leveling",
+    "character": "Beru",
+    "language": "en"
+  },
+  {
+    "id": 455,
+    "quote": "My sword exists solely for my king.",
+    "anime": "Solo Leveling",
+    "character": "Igris",
+    "language": "en"
+  },
+  {
+    "id": 456,
+    "quote": "The dungeon isn't just a place—it's a test.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 457,
+    "quote": "Regrets are heavier than any monster.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 458,
+    "quote": "I've stared death in the eyes too many times to flinch.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 459,
+    "quote": "The only 'S-rank' that matters is survival.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 460,
+    "quote": "My army moves as I will it.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 461,
+    "quote": "Danger is just opportunity in disguise.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 462,
+    "quote": "The weak Sung Jin-Woo died in that dungeon.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 463,
+    "quote": "I don't seek battles—they find me.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 464,
+    "quote": "Every resurrection makes me harder to kill.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 465,
+    "quote": "My title isn't given—it's earned.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 466,
+    "quote": "The best hunters adapt. The rest die.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 467,
+    "quote": "I'm not a hero. I'm a survivor.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 468,
+    "quote": "My shadows don't cast darkness—they consume it.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 469,
+    "quote": "The gate chooses who enters. I choose who leaves.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 470,
+    "quote": "There's no such thing as overprepared.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 471,
+    "quote": "Fear me if you value your life.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 472,
+    "quote": "My will is unbreakable because I broke it myself.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 473,
+    "quote": "The strongest weapon is a mind with nothing left to lose.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 474,
+    "quote": "I don't need an army... but having one helps.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 475,
+    "quote": "Ranks are numbers. Power is real.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 476,
+    "quote": "The only failure is giving up.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 477,
+    "quote": "I'll carve my legacy in the bones of my enemies.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 478,
+    "quote": "Complacency is the true dungeon boss.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 479,
+    "quote": "My power grows with every challenge.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 480,
+    "quote": "The strongest cages are those we build ourselves.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 481,
+    "quote": "I hunt alone, but I fight for many.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 482,
+    "quote": "Death isn't an ending—it's a tool.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 483,
+    "quote": "The shadows whisper truth where light lies.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 484,
+    "quote": "My strength is borrowed? No—it's conquered.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 485,
+    "quote": "The system is a map. I choose the path.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 486,
+    "quote": "Underestimate me. It'll be your last mistake.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 487,
+    "quote": "I don't avoid danger. I level it up.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 488,
+    "quote": "My past weakness is my current motivation.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 489,
+    "quote": "The only approval I seek is from yesterday's me.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 490,
+    "quote": "Gates aren't entrances—they're invitations to conquer.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 491,
+    "quote": "My shadows stand where light fears to tread.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 492,
+    "quote": "I don't fight monsters. I command them.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 493,
+    "quote": "The hunter's greatest weapon isn't strength—it's adaptability.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 494,
+    "quote": "I level up not to rule, but to protect.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 495,
+    "quote": "My resolve is my strongest armor.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 496,
+    "quote": "The weakest E-rank became the strongest hunter.",
+    "anime": "Solo Leveling",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 497,
+    "quote": "Chaos isn't a threat—it's an opportunity.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 498,
+    "quote": "I don't fear death. Death fears me.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 499,
+    "quote": "My legacy won't be written in ink, but in shadows.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 500,
+    "quote": "The true solo leveler needs no audience.",
+    "anime": "Solo Leveling",
+    "character": "Sung Jin-Woo",
+    "language": "en"
+  },
+  {
+    "id": 501,
+    "quote": "Strength is responsibility worn as armor.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 502,
+    "quote": "A guild's strength lies in its weakest member.",
+    "anime": "Solo Leveling",
+    "character": "Choi Jong-In",
+    "language": "en"
+  },
+  {
+    "id": 503,
+    "quote": "Korea's hunters stand united against darkness.",
+    "anime": "Solo Leveling",
+    "character": "Go Gunhee",
+    "language": "en"
+  },
+  {
+    "id": 504,
+    "quote": "The White Tiger's roar echoes our resolve.",
+    "anime": "Solo Leveling",
+    "character": "Baek Yoonho",
+    "language": "en"
+  },
+  {
+    "id": 505,
+    "quote": "My loyalty is to the Shadow Monarch alone.",
+    "anime": "Solo Leveling",
+    "character": "Beru",
+    "language": "en"
+  },
+  {
+    "id": 506,
+    "quote": "A knight serves. A shadow knight conquers.",
+    "anime": "Solo Leveling",
+    "character": "Igris",
+    "language": "en"
+  },
+  {
+    "id": 507,
+    "quote": "Hyung-nim's path is my path!",
+    "anime": "Solo Leveling",
+    "character": "Yoo Jinho",
+    "language": "en"
+  },
+  {
+    "id": 508,
+    "quote": "Dungeons reveal a hunter's true character.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 509,
+    "quote": "Power unused is power wasted.",
+    "anime": "Solo Leveling",
+    "character": "Choi Jong-In",
+    "language": "en"
+  },
+  {
+    "id": 510,
+    "quote": "The Association protects before it governs.",
+    "anime": "Solo Leveling",
+    "character": "Go Gunhee",
+    "language": "en"
+  },
+  {
+    "id": 511,
+    "quote": "Pride is the hunter's first weakness.",
+    "anime": "Solo Leveling",
+    "character": "Baek Yoonho",
+    "language": "en"
+  },
+  {
+    "id": 512,
+    "quote": "All shall kneel before the Shadow Monarch.",
+    "anime": "Solo Leveling",
+    "character": "Beru",
+    "language": "en"
+  },
+  {
+    "id": 513,
+    "quote": "My sword remembers every victory.",
+    "anime": "Solo Leveling",
+    "character": "Igris",
+    "language": "en"
+  },
+  {
+    "id": 514,
+    "quote": "Trust in Jin-Woo hyung is never misplaced!",
+    "anime": "Solo Leveling",
+    "character": "Yoo Jinho",
+    "language": "en"
+  },
+  {
+    "id": 515,
+    "quote": "The scent of strength... it fascinates me.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 516,
+    "quote": "Fire isn't just destruction—it's purification.",
+    "anime": "Solo Leveling",
+    "character": "Choi Jong-In",
+    "language": "en"
+  },
+  {
+    "id": 517,
+    "quote": "An old hunter's wisdom outlives his strength.",
+    "anime": "Solo Leveling",
+    "character": "Go Gunhee",
+    "language": "en"
+  },
+  {
+    "id": 518,
+    "quote": "The White Tiger never retreats.",
+    "anime": "Solo Leveling",
+    "character": "Baek Yoonho",
+    "language": "en"
+  },
+  {
+    "id": 519,
+    "quote": "My existence serves the Monarch.",
+    "anime": "Solo Leveling",
+    "character": "Beru",
+    "language": "en"
+  },
+  {
+    "id": 520,
+    "quote": "Honor is the shadow soldier's compass.",
+    "anime": "Solo Leveling",
+    "character": "Igris",
+    "language": "en"
+  },
+  {
+    "id": 521,
+    "quote": "Watching hyung-nim fight... it's like art!",
+    "anime": "Solo Leveling",
+    "character": "Yoo Jinho",
+    "language": "en"
+  },
+  {
+    "id": 522,
+    "quote": "True strength protects what it loves.",
+    "anime": "Solo Leveling",
+    "character": "Cha Hae-In",
+    "language": "en"
+  },
+  {
+    "id": 523,
+    "quote": "I feel like I’m always searching for something, for someone.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 524,
+    "quote": "No matter what, don't let go of my hand!",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 525,
+    "quote": "Musubi is the old way of calling the local guardian god. It means to connect or to bind.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 526,
+    "quote": "I wanted to tell you that wherever you are in the world, I will search for you.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 527,
+    "quote": "The sake we make is half for the gods. We return to them what they gave us.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 528,
+    "quote": "I hate this town. I hate how there's nothing here. I hate living here.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 529,
+    "quote": "What's important is not the words, but your heart.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 530,
+    "quote": "I'll write 'I love you' on your hand so you won't forget.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 531,
+    "quote": "I can't remember your name, but I know I loved you deeply.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 532,
+    "quote": "The thread of time itself is a circle. That's what Musubi is.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 533,
+    "quote": "I woke up crying again. I don't remember the dream, but there's a lingering sadness.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 534,
+    "quote": "Who are you? I came here to meet you.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 535,
+    "quote": "We are connected by the red string of fate.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 536,
+    "quote": "I believe we met for a reason. You're my... someone important.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 537,
+    "quote": "Dreams fade away after you wake up.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 538,
+    "quote": "I'm not sure what I'm hoping for, but I feel like I'm looking for something.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 539,
+    "quote": "The sake is a connection to the gods. Time itself is a knot they tie.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 540,
+    "quote": "I wanted to see you one more time. To talk to you.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 541,
+    "quote": "We met in a dream, didn't we?",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 542,
+    "quote": "I'll never forget you. Even if I can't remember your name.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 543,
+    "quote": "The town is gone. But I remember you.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 544,
+    "quote": "I feel like I've been searching for you forever.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 545,
+    "quote": "Do you remember me? My name is...",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 546,
+    "quote": "I drew this place because I felt like I had to.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 547,
+    "quote": "We switched places. And it changed everything.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 548,
+    "quote": "I came here to save you. To change your fate.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 549,
+    "quote": "I hate how small this town is. I want to see Tokyo!",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 550,
+    "quote": "I can't remember your face, but I remember your warmth.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 551,
+    "quote": "This feeling... it's like I'm forgetting something very important.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 552,
+    "quote": "The comet was beautiful, but it took everything away.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 553,
+    "quote": "Trust me. We have to save them.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 554,
+    "quote": "I made kuchikamizake for the gods. It's part of me.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 555,
+    "quote": "Time is like a river. Sometimes it flows backward.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 556,
+    "quote": "Why do I keep crying? What am I missing?",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 557,
+    "quote": "I wish I could have met you in real life.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 558,
+    "quote": "The name engraved here... I know it's important.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 559,
+    "quote": "You were the one who wrote in my notebook, weren't you?",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 560,
+    "quote": "I believe in you. Even if you don't remember.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 561,
+    "quote": "This town is my home, but it feels like a cage.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 562,
+    "quote": "We're bound by something stronger than memory.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 563,
+    "quote": "I have to find her. I don't know why, but I must.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 564,
+    "quote": "The sunset makes the world look like another dimension.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 565,
+    "quote": "I don't even know your name, but I love you.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 566,
+    "quote": "This connection... it's more than just a dream.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 567,
+    "quote": "We're writing messages to each other across time.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 568,
+    "quote": "The braided cord is a symbol of time itself.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 569,
+    "quote": "I remember the feeling, but the memory is gone.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 570,
+    "quote": "Please remember me. Please find me.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 571,
+    "quote": "I'll make sure you live. I promise.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 572,
+    "quote": "The gods have given us a chance to meet.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 573,
+    "quote": "This town is beautiful. I never realized it before.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 574,
+    "quote": "We've crossed time to find each other.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 575,
+    "quote": "I left you a message. Did you see it?",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 576,
+    "quote": "I know you're out there. I can feel it.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 577,
+    "quote": "The twilight hour... when the world blurs.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 578,
+    "quote": "I don't care if it's impossible. I have to try.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 579,
+    "quote": "You changed my life. Even from far away.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 580,
+    "quote": "I won't let go this time. I won't forget.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 581,
+    "quote": "The past, present, and future are all connected.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 582,
+    "quote": "I drew these sketches because you were in my heart.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 583,
+    "quote": "Even if we forget, our hearts remember.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 584,
+    "quote": "We were always meant to meet.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 585,
+    "quote": "I'll search every corner of this world for you.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 586,
+    "quote": "This sadness... it's because I lost someone precious.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 587,
+    "quote": "The comet was a beginning and an end.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 588,
+    "quote": "Your handwriting... I recognize it.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 589,
+    "quote": "I'll write my name so you never forget.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 590,
+    "quote": "Time is collapsing, but my feelings won't.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 591,
+    "quote": "We are bound by more than memories.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 592,
+    "quote": "The gods gave us a miracle.",
+    "anime": "Your Name",
+    "character": "Hitoha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 593,
+    "quote": "I feel you everywhere, in everything.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 594,
+    "quote": "This isn't a dream. It's real.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 595,
+    "quote": "The string connecting us can't be broken.",
+    "anime": "Your Name",
+    "character": "Narrator",
+    "language": "en"
+  },
+  {
+    "id": 596,
+    "quote": "I remember the sky, the town, and... you.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 597,
+    "quote": "Even if we're apart, I'll find you.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 598,
+    "quote": "The world is full of mysteries, but this is ours.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 599,
+    "quote": "I promise I'll remember this time.",
+    "anime": "Your Name",
+    "character": "Mitsuha Miyamizu",
+    "language": "en"
+  },
+  {
+    "id": 600,
+    "quote": "I'm here because of you. Always.",
+    "anime": "Your Name",
+    "character": "Taki Tachibana",
+    "language": "en"
+  },
+  {
+    "id": 601,
+    "quote": "I will never forget the Eighty-Six. I swear it on my name and honor!",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 602,
+    "quote": "We fight because we choose to. Because we refuse to let them decide our worth.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 603,
+    "quote": "Even if we disappear, we'll leave proof that we were here. That we lived.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 604,
+    "quote": "I'll keep fighting until I've taken everything back that they stole from us.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 605,
+    "quote": "This war devours everyone. Even those who think they're safe.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 606,
+    "quote": "I don't need a grave. I'm going to die on the battlefield anyway.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 607,
+    "quote": "If I can save even one person... that's enough reason to keep fighting.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 608,
+    "quote": "They called us pigs, but we're the ones who survived hell. What does that make them?",
+    "anime": "86-Eight Six",
+    "character": "Daiya Irma",
+    "language": "en"
+  },
+  {
+    "id": 609,
+    "quote": "The battlefield is our home. Death is our neighbor.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 610,
+    "quote": "I want to see you. I want to meet you. I want to hear your voice.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 611,
+    "quote": "We're not heroes. We're just survivors.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 612,
+    "quote": "Even if this nation forgets us, I will remember every single one of you.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 613,
+    "quote": "I'll become stronger. Strong enough to protect everyone this time.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 614,
+    "quote": "Art is the only thing that proves we're still human in this madness.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 615,
+    "quote": "Carry the dead with you. That's how we keep moving forward.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 616,
+    "quote": "I refuse to let your deaths be in vain. That's why I'll keep fighting.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 617,
+    "quote": "Freedom isn't given. It's taken with your own hands.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 618,
+    "quote": "We dance on the edge of death because it's the only way to feel alive.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 619,
+    "quote": "My bullets will reach the future we deserve.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 620,
+    "quote": "This sketchbook is my rebellion against a world that wants to erase us.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 621,
+    "quote": "The Reaper doesn't fear death. He fears outliving everyone again.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 622,
+    "quote": "Your voice was the only thing that made me feel human.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 623,
+    "quote": "I won't let their sacrifices be forgotten. Not while I draw breath.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 624,
+    "quote": "Survival isn't victory. It's just permission to keep suffering.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 625,
+    "quote": "We'll find beauty even in this broken world. That's our defiance.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 626,
+    "quote": "I'll keep aiming higher until I can see the tomorrow we fought for.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 627,
+    "quote": "They took our homes, our names, our dignity. But they can't take our will.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 628,
+    "quote": "I carry the voices of the dead. They're my compass in this war.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 629,
+    "quote": "You saw us as humans when no one else would. That changes everything.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 630,
+    "quote": "Our blood waters this cursed land. Maybe something better will grow from it.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 631,
+    "quote": "I fight so that one day, children won't have to.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 632,
+    "quote": "This rifle is my voice. Let it speak for those who were silenced.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 633,
+    "quote": "Even in darkness, we'll create our own light.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 634,
+    "quote": "We are not your sacrificial lambs. We are the wolves.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 635,
+    "quote": "If you hear this... know that we remembered you to the end.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 636,
+    "quote": "Broken things can still be beautiful. Broken people can still fight.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 637,
+    "quote": "I don't need your pity. I need your bullets.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 638,
+    "quote": "My hands may be stained, but I'll keep reaching for a better tomorrow.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 639,
+    "quote": "Every stroke of my pen is a refusal to let them dehumanize us.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 640,
+    "quote": "The battlefield sings. Can you hear its requiem?",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 641,
+    "quote": "I will bear witness to your struggle. Even if the world turns away.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 642,
+    "quote": "We laugh because if we stop, the weight of it all will crush us.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 643,
+    "quote": "Grace isn't surrender. It's defiance with elegance.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 644,
+    "quote": "I'll shoot down the nightmares so others can dream.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 645,
+    "quote": "They erased our names from history. So we'll write our own.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 646,
+    "quote": "Death is my companion, not my master.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 647,
+    "quote": "Your courage gives me strength. Even across the battlefield.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 648,
+    "quote": "We are the ghosts of a nation that abandoned us. And we are angry.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 649,
+    "quote": "Dance with me one last time. Before the music stops forever.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 650,
+    "quote": "I don't need recognition. I need results.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 651,
+    "quote": "Art is my armor against despair.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 652,
+    "quote": "I hunt Legion because it's the only thing I'm good for.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 653,
+    "quote": "I will scream your existence to a world that tries to silence you.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 654,
+    "quote": "Trust is the rarest ammunition on this battlefield.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 655,
+    "quote": "Even shattered glass reflects light. So will we.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 656,
+    "quote": "Precision isn't just skill. It's respect for the life I take.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 657,
+    "quote": "My drawings are tombstones for those without graves.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 658,
+    "quote": "The only peace I know is between battles.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 659,
+    "quote": "I wear white to mourn the living, not the dead.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 660,
+    "quote": "We are not victims. We are warriors with nothing left to lose.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 661,
+    "quote": "Gentleness is my rebellion against this cruel world.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 662,
+    "quote": "Every kill lengthens the chain of vengeance. But I'll keep pulling.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 663,
+    "quote": "I sketch so I never forget what humanity looks like.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 664,
+    "quote": "The Reaper comes for us all. I just meet him halfway.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 665,
+    "quote": "Commanding you isn't my right. It's my burden.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 666,
+    "quote": "Loyalty is the only currency that matters out here.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 667,
+    "quote": "If we must burn, let our ashes fertilize a better world.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 668,
+    "quote": "My scope shows me the future I'm fighting for.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 669,
+    "quote": "Ugliness surrounds us. So I create beauty where I can.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 670,
+    "quote": "I don't fear ghosts. I am one.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 671,
+    "quote": "Your voices are the map guiding me through this darkness.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 672,
+    "quote": "We forge brotherhood in the furnace of war.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 673,
+    "quote": "Elegance is the armor I wear against barbarity.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 674,
+    "quote": "Distance is my weapon. Separation is my shield.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 675,
+    "quote": "My art screams what my voice cannot.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 676,
+    "quote": "I fight so that others may know peace. Even if I never will.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 677,
+    "quote": "I will remember your names when history tries to erase them.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 678,
+    "quote": "Honor is a luxury for those who aren't fighting to survive.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 679,
+    "quote": "In this carnival of death, we'll waltz with dignity.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 680,
+    "quote": "My targets don't deserve my hatred. They deserve my precision.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 681,
+    "quote": "I draw the faces of the fallen so death won't steal them twice.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 682,
+    "quote": "The Legion took everything but my will to destroy them.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 683,
+    "quote": "Moral high ground won't stop bullets. But conviction might.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 684,
+    "quote": "We are the nails in the coffin of this damned war.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 685,
+    "quote": "Kindness is the bravest act of war.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 686,
+    "quote": "I don't aim for revenge. I aim for a world where revenge is unnecessary.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 687,
+    "quote": "Every line I draw is a lifeline to sanity.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 688,
+    "quote": "The blood on my hands is the only inheritance I have.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 689,
+    "quote": "I will not let your humanity be erased by their indifference.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 690,
+    "quote": "Survival is the ultimate 'fuck you' to those who wrote us off.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 691,
+    "quote": "We are more than our pain. We are the light that persists despite it.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 692,
+    "quote": "My rifle speaks the truth their propaganda silences.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 693,
+    "quote": "Art is the antidote to despair.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 694,
+    "quote": "I march toward death because life walks beside me.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 695,
+    "quote": "Your courage on the battlefield is my strength in the command room.",
+    "anime": "86-Eight Six",
+    "character": "Vladilena Milizé",
+    "language": "en"
+  },
+  {
+    "id": 696,
+    "quote": "We are the storm they unleashed but cannot control.",
+    "anime": "86-Eight Six",
+    "character": "Raiden Shuga",
+    "language": "en"
+  },
+  {
+    "id": 697,
+    "quote": "Dance through the apocalypse. It terrifies them.",
+    "anime": "86-Eight Six",
+    "character": "Anju Emma",
+    "language": "en"
+  },
+  {
+    "id": 698,
+    "quote": "I don't shoot to kill. I shoot to liberate.",
+    "anime": "86-Eight Six",
+    "character": "Kurena Kukumila",
+    "language": "en"
+  },
+  {
+    "id": 699,
+    "quote": "My sketchbook is proof: We were here. We mattered.",
+    "anime": "86-Eight Six",
+    "character": "Theoto Rikka",
+    "language": "en"
+  },
+  {
+    "id": 700,
+    "quote": "We are the Eighty-Six. Our existence is our declaration of war against oblivion.",
+    "anime": "86-Eight Six",
+    "character": "Shinei Nouzen",
+    "language": "en"
+  },
+  {
+    "id": 701,
+    "quote": "Human lives are fleeting flames. That's why every spark shines so brilliantly.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 702,
+    "quote": "True strength isn't measured by magic power, but by the will to protect what matters.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 703,
+    "quote": "Courage means facing your fears even when your knees shake.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 704,
+    "quote": "A hero's legacy isn't in statues, but in the hearts they've touched.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 705,
+    "quote": "Time heals nothing by itself. It's what we do with it that matters.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 706,
+    "quote": "Precision in magic comes from thousands of failures mastered.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 707,
+    "quote": "A warrior's axe defends dreams, not just borders.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 708,
+    "quote": "Faith isn't in gods, but in people's capacity to rise again.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 709,
+    "quote": "Regret is the shadow of immortality. Walk with it, but don't let it consume you.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 710,
+    "quote": "Growth happens outside the boundaries of comfort.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 711,
+    "quote": "Heroism is found in small, persistent acts of kindness.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 712,
+    "quote": "Protecting others starts with believing you're worth protecting too.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 713,
+    "quote": "Miracles are just efforts others didn't witness.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 714,
+    "quote": "Mountains teach patience; valleys teach resilience.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 715,
+    "quote": "Memories are fragile, but that's why we hold them gently.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 716,
+    "quote": "Mastery is endless. There's always a higher peak beyond the one you climb.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 717,
+    "quote": "A true journey never ends; it just changes paths.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 718,
+    "quote": "Fear isn't your enemy. Surrendering to it is.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 719,
+    "quote": "Dwarven steel endures because it remembers the forge.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 720,
+    "quote": "Compassion is the highest form of wisdom.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 721,
+    "quote": "A thousand years of solitude taught me this: connection is everything.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 722,
+    "quote": "Perfection is an illusion. Progress is the reality.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 723,
+    "quote": "Leave kindness wherever you go; it outlives monuments.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 724,
+    "quote": "Your weakest moment defines your strength more than victory ever could.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 725,
+    "quote": "Faith moves mountains when hands are too weary.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 726,
+    "quote": "Stone crumbles, but legends etched in hearts remain.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 727,
+    "quote": "Immortality is a lonely road. Walk it with companions.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 728,
+    "quote": "Magic isn't about destruction. It's about creating possibilities.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 729,
+    "quote": "A hero's smile can light darker paths than any torch.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 730,
+    "quote": "Admitting weakness takes more courage than pretending strength.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 731,
+    "quote": "Wine shared with friends tastes sweeter than nectar alone.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 732,
+    "quote": "Anvils shape swords; adversity shapes souls.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 733,
+    "quote": "Grief is the price of love. I'd pay it infinitely.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 734,
+    "quote": "Control your mana like your breath: steady, intentional, life-giving.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 735,
+    "quote": "Legends aren't born from power, but from choices.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 736,
+    "quote": "A shield protects not just bodies, but futures.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 737,
+    "quote": "Prayers need no temple. They live in actions.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 738,
+    "quote": "Metal remembers every strike. So do I.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 739,
+    "quote": "Centuries pass, but true bonds defy time.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 740,
+    "quote": "Discipline is the bridge between dreams and reality.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 741,
+    "quote": "Change the world by changing one heart—starting with your own.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 742,
+    "quote": "Battle cries come easier than whispered apologies.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 743,
+    "quote": "Redemption needs no audience, only intention.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 744,
+    "quote": "Forged in fire, tempered by time—that's a warrior's truth.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 745,
+    "quote": "Human seasons pass quickly. Treasure each blossom.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 746,
+    "quote": "Mana flows like rivers. Be the calm depth, not the crashing wave.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 747,
+    "quote": "A leader's strength is making others feel strong.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 748,
+    "quote": "Scars are maps of where courage overcame fear.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 749,
+    "quote": "Grace isn't given; it's practiced daily.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 750,
+    "quote": "Stone endures, but even mountains bow to wind and time.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 751,
+    "quote": "Loneliness is the tax immortality pays.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 752,
+    "quote": "Focus isn't narrowing your world—it's clarifying it.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 753,
+    "quote": "Hope is the quietest form of rebellion.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 754,
+    "quote": "Stand tall when trembling—that's when it counts most.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 755,
+    "quote": "Forgiveness is the soul's deepest magic.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 756,
+    "quote": "Dwarven honor: say little, do much.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 757,
+    "quote": "Watching humans live is like witnessing meteors—brief, blazing, beautiful.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 758,
+    "quote": "Every spell is a promise to yourself.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 759,
+    "quote": "Heroes aren't legends—they're neighbors who act.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 760,
+    "quote": "Courage isn't the absence of fear; it's moving forward despite it.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 761,
+    "quote": "The holiest temples are built in humble hearts.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 762,
+    "quote": "Endurance isn't stubbornness—it's love in motion.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 763,
+    "quote": "Regrets are seeds. Plant wisdom with them.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 764,
+    "quote": "Magic without discipline is a storm without direction.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 765,
+    "quote": "Smiles can be shields; kindness can be swords.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 766,
+    "quote": "A warrior's value isn't in kills, but in lives preserved.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 767,
+    "quote": "Blessings hide in ordinary moments. Open your eyes.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 768,
+    "quote": "Metal bends, stone cracks—but resolve? Unbreakable.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 769,
+    "quote": "To elves, humans are fireworks: glorious because they end.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 770,
+    "quote": "Perfection paralyzes. Progress empowers.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 771,
+    "quote": "Dream big, act small—that's how mountains are moved.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 772,
+    "quote": "Your greatest battle is against the voice saying 'I can't.'",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 773,
+    "quote": "Divinity lives in shared bread and whispered confessions.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 774,
+    "quote": "Dwarves measure worth in deeds, not words.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 775,
+    "quote": "I collect memories because they outlast even elves.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 776,
+    "quote": "Control isn't suppression—it's harmonious flow.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 777,
+    "quote": "Leave every place kinder than you found it.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 778,
+    "quote": "Bravery is contagious. Be patient-zero.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 779,
+    "quote": "Prayer isn't asking for changes—it's finding strength to endure them.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 780,
+    "quote": "An axe speaks only truth: either it holds, or it breaks.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 781,
+    "quote": "Immortality's curse? Watching sunsets alone.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 782,
+    "quote": "Mana responds to emotion. Calm your heart to command it.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 783,
+    "quote": "A hero's mightiest weapon is unwavering hope.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 784,
+    "quote": "Protect smiles, not just territory.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 785,
+    "quote": "Sins weigh heavy, but redemption lifts wings.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 786,
+    "quote": "Mountains don't boast. They endure.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 787,
+    "quote": "Human lives: too short for elves, too long for regrets.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 788,
+    "quote": "Great mages are forged in daily discipline, not destiny.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 789,
+    "quote": "Kings rise and fall. True heroes lift others eternally.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 790,
+    "quote": "Tremble if you must—just never retreat.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 791,
+    "quote": "Holiness is in the hand that feeds, not the one that preaches.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 792,
+    "quote": "Dwarven oaths: unbreakable as bedrock.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 793,
+    "quote": "Centuries pass, yet grief feels fresh as dawn.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 794,
+    "quote": "Magic mastery is 1% talent, 99% stubborn repetition.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  },
+  {
+    "id": 795,
+    "quote": "Change the world's story with small, brave chapters.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Himmel",
+    "language": "en"
+  },
+  {
+    "id": 796,
+    "quote": "A warrior's heart is measured by what it shields.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Stark",
+    "language": "en"
+  },
+  {
+    "id": 797,
+    "quote": "Salvation begins when we extend a hand, not preach.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Heiter",
+    "language": "en"
+  },
+  {
+    "id": 798,
+    "quote": "Stone speaks through silence. Listen.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Eisen",
+    "language": "en"
+  },
+  {
+    "id": 799,
+    "quote": "I wander not to find myself, but to remember who traveled with me.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Frieren",
+    "language": "en"
+  },
+  {
+    "id": 800,
+    "quote": "Power restrained is truer than power unleashed.",
+    "anime": "Frieren: Beyond Journey’s End",
+    "character": "Fern",
+    "language": "en"
+  }
+]

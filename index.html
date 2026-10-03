@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animechan Live Quote Overlay Widget</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Strictly transparent base */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: transparent !important;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #f1f5f9;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Background Video Layer */
+    .video-background-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    #bgVideo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.5s ease;
+    }
+
+    #videoDimmer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.15);
+      pointer-events: none;
+      display: block;
+    }
+
+    /* Screen container */
+    .widget-viewport {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      /* Let desktop clicks pass through */
+    }
+
+    /* Modern Dark-Translucent Floating Card */
+    .quote-card {
+      pointer-events: auto;
+      /* Enable interaction on the card */
+      position: absolute;
+      bottom: 48px;
+      right: 48px;
+      width: clamp(340px, 28vw, 520px);
+      background: rgba(13, 13, 17, 0.65);
+      backdrop-filter: blur(12px) saturate(160%);
+      -webkit-backdrop-filter: blur(12px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba(255, 157, 0, 0.28);
+      border-radius: 18px;
+      padding: 24px 28px 20px;
+      box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(255, 157, 0, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      cursor: grab;
+    }
+
+    .quote-card:active {
+      cursor: grabbing;
+    }
+
+    .quote-card:hover {
+      border-color: rgba(255, 157, 0, 0.38);
+      box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.65),
+        0 0 45px rgba(255, 157, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    /* Header & Controls */
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      opacity: 0.85;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 3px 6px;
+      border-radius: 6px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .status-badge:hover {
+      background: rgba(255, 255, 255, 0.07);
+      color: #e2e8f0;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .status-dot.offline {
+      background: #f59e0b;
+      box-shadow: 0 0 8px #f59e0b;
+    }
+
+    .status-dot.loading {
+      background: #38bdf8;
+      box-shadow: 0 0 8px #38bdf8;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .mode-select {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      font-family: inherit;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 6px;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .mode-select:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 157, 0, 0.4);
+      color: #fff;
+    }
+
+    .mode-select option {
+      background: #121217;
+      color: #f1f5f9;
+    }
+
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .icon-btn:hover {
+      background: rgba(255, 157, 0, 0.15);
+      border-color: rgba(255, 157, 0, 0.4);
+      color: #ff9d00;
+    }
+
+    .icon-btn svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.4s ease;
+    }
+
+    .icon-btn.spinning svg {
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    #videoFileInput {
+      display: none;
+    }
+
+    /* Content Area with Fade Transitions */
+    .quote-body {
+      position: relative;
+      min-height: 80px;
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .quote-body.fade-out {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+
+    .quote-mark {
+      position: absolute;
+      top: -8px;
+      left: -14px;
+      font-size: 3.2rem;
+      line-height: 1;
+      font-family: 'Playfair Display', Georgia, serif;
+      color: rgba(255, 157, 0, 0.18);
+      pointer-events: none;
+    }
+
+    .quote-text {
+      position: relative;
+      z-index: 1;
+      font-size: 1.25rem;
+      line-height: 1.58;
+      font-weight: 500;
+      color: var(--accent-color, #ff9d00);
+      text-shadow: 0 0 20px rgba(255, 157, 0, 0.25);
+      margin-bottom: 18px;
+      word-break: break-word;
+    }
+
+    .attribution {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      gap: 5px;
+    }
+
+    .character-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      letter-spacing: 0.02em;
+    }
+
+    .anime-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .anime-title {
+      font-size: 0.82rem;
+      font-style: italic;
+      color: #94a3b8;
+      letter-spacing: 0.01em;
+    }
+
+    .genre-pill {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: rgba(255, 157, 0, 0.12);
+      border: 1px solid rgba(255, 157, 0, 0.3);
+      color: var(--accent-color, #ff9d00);
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    }
+
+    /* Progress bar */
+    .progress-track {
+      width: 100%;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 2px;
+      margin-top: 16px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-color, #ff9d00), #ffba42);
+      box-shadow: 0 0 6px rgba(255, 157, 0, 0.6);
+      transition: width 1s linear;
+    }
+
+    /* Drag and drop overlay hint */
+    .drop-overlay-hint {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 13, 17, 0.85);
+      border: 3px dashed #ff9d00;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ff9d00;
+      pointer-events: none;
+    }
+
+    @media (max-width: 640px) {
+      .quote-card {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        width: auto;
+      }
+
+      .quote-text {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Video Element -->
+  <div class="video-background-layer">
+    <video id="bgVideo" autoplay loop muted playsinline src="video.mp4"></video>
+    <div id="videoDimmer"></div>
+  </div>
+
+  <!-- Drag & Drop visual hint -->
+  <div class="drop-overlay-hint" id="dropHint">
+    Drop Video Here (.mp4, .webm)
+  </div>
+
+  <!-- Viewport -->
+  <div class="widget-viewport">
+    <div class="quote-card" id="quoteCard">
+      <!-- Header Controls -->
+      <div class="card-header">
+        <div class="status-badge">
+          <span class="status-dot" id="statusDot" title="Live Animechan Stream"></span>
+          <span id="statusLabel">deepu.exe</span>
+        </div>
+        <div class="controls">
+          <select id="modeSelect" class="mode-select" title="Anime Genre Filter">
+            <option value="all">All Genres</option>
+            <option value="action">Action / Shonen</option>
+            <option value="ecchi">Ecchi / Harem</option>
+            <option value="romance">Romance / Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="psychological">Psychological / Sci-Fi</option>
+            <option value="fantasy">Fantasy / Supernatural</option>
+          </select>
+          <!-- Choose Video Button -->
+          <button class="icon-btn" id="videoBtn" title="Choose Background Video (.mp4/.webm)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+              <line x1="7" y1="2" x2="7" y2="22"></line>
+              <line x1="17" y1="2" x2="17" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="2" y1="7" x2="7" y2="7"></line>
+              <line x1="2" y1="17" x2="7" y2="17"></line>
+              <line x1="17" y1="17" x2="22" y2="17"></line>
+              <line x1="17" y1="7" x2="22" y2="7"></line>
+            </svg>
+          </button>
+          <input type="file" id="videoFileInput" accept="video/mp4,video/webm,video/mkv,video/*">
+          <!-- Refresh Quote Button -->
+          <button class="icon-btn" id="refreshBtn" title="Fetch New Quote">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quote Content -->
+      <div class="quote-body" id="quoteBody">
+        <div class="quote-mark">“</div>
+        <div class="quote-text" id="quoteText">Loading anime wisdom...</div>
+        <div class="attribution">
+          <div class="character-name" id="characterName">—</div>
+          <div class="anime-meta">
+            <span class="anime-title" id="animeTitle"></span>
+            <span class="genre-pill" id="genrePill" style="display: none;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Track -->
+      <div class="progress-track" title="Next quote countdown">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AniQuotesAPI 801 quotes database (offline-ready, instant zero-latency load) -->
+  <script src="quotes-data.js"></script>
+  <script>
+    /**
+     * Animechan Quote Overlay Widget + Integrated Video Wallpaper
+     */
+    (() => {
+      const ROTATION_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
+      const PROGRESS_TICK_MS = 1000;
+
+      const API_ENDPOINTS = {
+        random: [
+          'https://api.animechan.io/v1/quotes/random',
+          'https://animechan.io/api/v1/quotes/random'
+        ]
+      };
+      const GITHUB_QUOTES_URL = 'https://raw.githubusercontent.com/Shineii86/AniQuotesAPI/main/data/quotes.json';
+
+      // Curated master quotes database representing EVERY genre / type
+      const CURATED_QUOTES = {
+        action: [
+          {
+            quote: "If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be!",
+            character: "Naruto Uzumaki",
+            anime: "Naruto Shippuden",
+            genres: ["Action", "Shounen", "Adventure"]
+          },
+          {
+            quote: "If you win, you live. If you lose, you die. If you don't fight, you can't win!",
+            character: "Eren Yeager",
+            anime: "Attack on Titan",
+            genres: ["Action", "Fantasy", "Drama"]
+          },
+          {
+            quote: "If you don't take risks, you can't create a future.",
+            character: "Monkey D. Luffy",
+            anime: "One Piece",
+            genres: ["Action", "Adventure", "Comedy"]
+          },
+          {
+            quote: "Scars on the back are a swordsman's shame.",
+            character: "Roronoa Zoro",
+            anime: "One Piece",
+            genres: ["Action", "Shounen"]
+          },
+          {
+            quote: "Dying to win and risking death to win are completely different.",
+            character: "Satoru Gojo",
+            anime: "Jujutsu Kaisen",
+            genres: ["Action", "Supernatural", "Shounen"]
+          },
+          {
+            quote: "Those who break the rules are scum, that's true, but those who abandon their friends are worse than scum.",
+            character: "Kakashi Hatake",
+            anime: "Naruto",
+            genres: ["Action", "Shounen"]
+          },
+          {
+            quote: "Power comes in response to a need, not a desire. You have to create that need.",
+            character: "Son Goku",
+            anime: "Dragon Ball Z",
+            genres: ["Action", "Shounen", "Martial Arts"]
+          },
+          {
+            quote: "There is only one certainty in life. A strong man stands above and conquers all!",
+            character: "Vegeta",
+            anime: "Dragon Ball Z",
+            genres: ["Action", "Shounen"]
+          },
+          {
+            quote: "The only thing we're allowed to do is believe that we won't regret the choice we made.",
+            character: "Levi Ackerman",
+            anime: "Attack on Titan",
+            genres: ["Action", "Fantasy", "Drama"]
+          },
+          {
+            quote: "Arise.",
+            character: "Sung Jin-woo",
+            anime: "Solo Leveling",
+            genres: ["Action", "Fantasy", "Supernatural"]
+          },
+          {
+            quote: "Everyone's got dreams they wanna reach for. If having normal dreams makes me crazy, then let me be crazy!",
+            character: "Denji",
+            anime: "Chainsaw Man",
+            genres: ["Action", "Supernatural"]
+          },
+          {
+            quote: "You have no enemies. No one in this world has any enemies.",
+            character: "Thorfinn",
+            anime: "Vinland Saga",
+            genres: ["Action", "Drama", "Historical"]
+          },
+          {
+            quote: "Even if I'm not the chosen one, I'll carve my own path with my two hands!",
+            character: "Asta",
+            anime: "Black Clover",
+            genres: ["Action", "Fantasy", "Shounen"]
+          }
+        ],
+        ecchi: [
+          {
+            quote: "Boobs are life, boobs are truth! To live without breasts is to live without a purpose!",
+            character: "Issei Hyoudou",
+            anime: "High School DxD",
+            genres: ["Ecchi", "Harem", "Action"]
+          },
+          {
+            quote: "Even if you're a pervert, if you protect the people you love with your life, you are my hero.",
+            character: "Rias Gremory",
+            anime: "High School DxD",
+            genres: ["Ecchi", "Romance", "Harem"]
+          },
+          {
+            quote: "Ara ara, you really are an interesting boy.",
+            character: "Akeno Himejima",
+            anime: "High School DxD",
+            genres: ["Ecchi", "Harem", "Supernatural"]
+          },
+          {
+            quote: "There is no such thing as chance in this world. As everything happens for a reason, our destiny takes form.",
+            character: "Sora",
+            anime: "No Game No Life",
+            genres: ["Ecchi", "Comedy", "Fantasy"]
+          },
+          {
+            quote: "Blank never loses.",
+            character: "Shiro",
+            anime: "No Game No Life",
+            genres: ["Ecchi", "Comedy", "Game"]
+          },
+          {
+            quote: "If you're going to doubt everything, you might as well start by doubting whether you're right to doubt.",
+            character: "Meme Oshino",
+            anime: "Bakemonogatari",
+            genres: ["Ecchi", "Mystery", "Supernatural"]
+          },
+          {
+            quote: "I love you more than anyone else in this entire world.",
+            character: "Hitagi Senjougahara",
+            anime: "Bakemonogatari",
+            genres: ["Ecchi", "Romance", "Supernatural"]
+          },
+          {
+            quote: "There's no reason to pretend that you're something you're not.",
+            character: "Shinobu Oshino",
+            anime: "Bakemonogatari",
+            genres: ["Ecchi", "Supernatural"]
+          },
+          {
+            quote: "Cooking is an endless wasteland without an answer, but that's why it's so interesting.",
+            character: "Soma Yukihira",
+            anime: "Food Wars!",
+            genres: ["Ecchi", "Comedy", "Shounen"]
+          },
+          {
+            quote: "Disgusting! ...Yet I simply cannot stop eating it!",
+            character: "Erina Nakiri",
+            anime: "Food Wars!",
+            genres: ["Ecchi", "Comedy"]
+          },
+          {
+            quote: "Fear is freedom! Subjugation is liberation! Contradiction is truth! Those are the facts of this world!",
+            character: "Satsuki Kiryuin",
+            anime: "Kill la Kill",
+            genres: ["Ecchi", "Action", "Comedy"]
+          },
+          {
+            quote: "If you don't strip your clothes, you can't see the real you!",
+            character: "Ryuko Matoi",
+            anime: "Kill la Kill",
+            genres: ["Ecchi", "Action"]
+          },
+          {
+            quote: "A man who cannot forgive a woman's lies is no man at all!",
+            character: "Kiyoshi Fujino",
+            anime: "Prison School",
+            genres: ["Ecchi", "Comedy"]
+          },
+          {
+            quote: "Brothers before everything! A man must stand by his comrades even behind bars!",
+            character: "Gakuto",
+            anime: "Prison School",
+            genres: ["Ecchi", "Comedy"]
+          },
+          {
+            quote: "If you love someone, you should always tell them with all your heart!",
+            character: "Lala Satalin Deviluke",
+            anime: "To Love Ru",
+            genres: ["Ecchi", "Comedy", "Harem"]
+          },
+          {
+            quote: "You were ready to kill another creature, yet you are scared to be killed yourself?",
+            character: "Kurumi Tokisaki",
+            anime: "Date A Live",
+            genres: ["Ecchi", "Harem", "Sci-Fi"]
+          },
+          {
+            quote: "I don't study magic to rule the world. I study it to protect the girls I care about.",
+            character: "Arata Kasuga",
+            anime: "Trinity Seven",
+            genres: ["Ecchi", "Harem", "Fantasy"]
+          },
+          {
+            quote: "Study isn't about being born a genius, it's about pushing past your limits every single day.",
+            character: "Fuutarou Uesugi",
+            anime: "The Quintessential Quintuplets",
+            genres: ["Ecchi", "Harem", "Romance"]
+          }
+        ],
+        romance: [
+          {
+            quote: "I wanted to tell you that wherever you may end up in this world, I will be searching for you.",
+            character: "Taki Tachibana",
+            anime: "Your Name",
+            genres: ["Romance", "Drama", "Supernatural"]
+          },
+          {
+            quote: "Treasure the experience. Dreams fade away after you wake up.",
+            character: "Mitsuha Miyamizu",
+            anime: "Your Name",
+            genres: ["Romance", "Drama", "Supernatural"]
+          },
+          {
+            quote: "Was I able to live inside someone's heart? Was I able to live inside your heart?",
+            character: "Kaori Miyazono",
+            anime: "Your Lie in April",
+            genres: ["Drama", "Romance", "Music"]
+          },
+          {
+            quote: "Even in the deepest darkness, you shone like the warm spring sun.",
+            character: "Kousei Arima",
+            anime: "Your Lie in April",
+            genres: ["Drama", "Romance", "Music"]
+          },
+          {
+            quote: "If you can find something that makes you happy, hold onto it tightly, no matter what.",
+            character: "Tomoya Okazaki",
+            anime: "Clannad: After Story",
+            genres: ["Romance", "Drama", "Slice of Life"]
+          },
+          {
+            quote: "Love is like a ghost. Many believe in it, but very few have actually seen it.",
+            character: "Ryuuji Takasu",
+            anime: "Toradora!",
+            genres: ["Romance", "Comedy", "Drama"]
+          },
+          {
+            quote: "It's not about being someone else. It's about being truly yourself with the one you love.",
+            character: "Taiga Aisaka",
+            anime: "Toradora!",
+            genres: ["Romance", "Comedy"]
+          },
+          {
+            quote: "Living means having bonds with others. Paying attention to someone, loving someone, hating someone.",
+            character: "Sakura Yamauchi",
+            anime: "I Want to Eat Your Pancreas",
+            genres: ["Romance", "Drama", "Slice of Life"]
+          },
+          {
+            quote: "Let me eat your pancreas. I want to become a part of who you are.",
+            character: "Haruki Shiga",
+            anime: "I Want to Eat Your Pancreas",
+            genres: ["Romance", "Drama"]
+          },
+          {
+            quote: "In love, the one who falls in love first and confesses is the loser!",
+            character: "Miyuki Shirogane",
+            anime: "Kaguya-sama: Love is War",
+            genres: ["Romance", "Comedy", "Psychological"]
+          },
+          {
+            quote: "How cute...",
+            character: "Kaguya Shinomiya",
+            anime: "Kaguya-sama: Love is War",
+            genres: ["Romance", "Comedy"]
+          },
+          {
+            quote: "I hate nice girls. Just exchanging greetings with them gets on one's mind. So don't be nice to me.",
+            character: "Hachiman Hikigaya",
+            anime: "My Teen Romantic Comedy SNAFU",
+            genres: ["Romance", "Drama", "Slice of Life"]
+          },
+          {
+            quote: "I want to know what 'I love you' truly means.",
+            character: "Violet Evergarden",
+            anime: "Violet Evergarden",
+            genres: ["Drama", "Romance", "Fantasy"]
+          },
+          {
+            quote: "Back then, if we could have heard each other's voices, everything would have been so much better.",
+            character: "Shoya Ishida",
+            anime: "A Silent Voice",
+            genres: ["Drama", "Romance", "Slice of Life"]
+          },
+          {
+            quote: "I don't mind if I only have one person. Even if the whole world hated me, I could keep living if that person needed me.",
+            character: "Sakuta Azusagawa",
+            anime: "Rascal Does Not Dream of Bunny Girl Senpai",
+            genres: ["Romance", "Drama", "Supernatural"]
+          }
+        ],
+        comedy: [
+          {
+            quote: "The best way to live a full life is to be a child, no matter what your age.",
+            character: "Gintoki Sakata",
+            anime: "Gintama",
+            genres: ["Comedy", "Action", "Parody"]
+          },
+          {
+            quote: "Eat while you can, sleep while you can, fight when you must!",
+            character: "Kagura",
+            anime: "Gintama",
+            genres: ["Comedy", "Action"]
+          },
+          {
+            quote: "I yearn for true gender equality. I have no patience for one who talks about female privilege!",
+            character: "Kazuma Satou",
+            anime: "KonoSuba",
+            genres: ["Comedy", "Ecchi", "Fantasy"]
+          },
+          {
+            quote: "Explosion is the only magic worth casting!",
+            character: "Megumin",
+            anime: "KonoSuba",
+            genres: ["Comedy", "Fantasy"]
+          },
+          {
+            quote: "Hehe, worship me! I am the goddess of water, after all!",
+            character: "Aqua",
+            anime: "KonoSuba",
+            genres: ["Comedy", "Fantasy"]
+          },
+          {
+            quote: "Being normal is the hardest thing in the world.",
+            character: "Kusuo Saiki",
+            anime: "The Disastrous Life of Saiki K.",
+            genres: ["Comedy", "Supernatural"]
+          },
+          {
+            quote: "Here, have some water... Wait, why is it flammable?!",
+            character: "Iori Kitahara",
+            anime: "Grand Blue",
+            genres: ["Comedy", "Slice of Life"]
+          },
+          {
+            quote: "I'm just a guy who's a hero for fun.",
+            character: "Saitama",
+            anime: "One Punch Man",
+            genres: ["Comedy", "Action", "Super Power"]
+          },
+          {
+            quote: "Waku waku! Papa is a spy, Mama is an assassin, this is so exciting!",
+            character: "Anya Forger",
+            anime: "Spy x Family",
+            genres: ["Comedy", "Action", "Slice of Life"]
+          },
+          {
+            quote: "To create a world where children don't have to cry... that was the whole reason I became a spy.",
+            character: "Loid Forger",
+            anime: "Spy x Family",
+            genres: ["Comedy", "Action", "Drama"]
+          },
+          {
+            quote: "Social interactions are terrifying, but my guitar speaks for me!",
+            character: "Hitori Gotoh",
+            anime: "Bocchi the Rock!",
+            genres: ["Comedy", "Music", "Slice of Life"]
+          },
+          {
+            quote: "You think you can judge someone by their test scores? Life isn't a multiple choice exam!",
+            character: "Eikichi Onizuka",
+            anime: "Great Teacher Onizuka",
+            genres: ["Comedy", "Drama", "Slice of Life"]
+          }
+        ],
+        psychological: [
+          {
+            quote: "I am justice! I protect the innocent and those who fear evil. I will become the god of a new world.",
+            character: "Light Yagami",
+            anime: "Death Note",
+            genres: ["Psychological", "Mystery", "Supernatural"]
+          },
+          {
+            quote: "No matter how gifted you are... you alone cannot change the world.",
+            character: "L Lawliet",
+            anime: "Death Note",
+            genres: ["Psychological", "Mystery", "Thriller"]
+          },
+          {
+            quote: "No one knows what the future holds. That's why its potential is infinite. El Psy Kongroo.",
+            character: "Rintaro Okabe",
+            anime: "Steins;Gate",
+            genres: ["Sci-Fi", "Psychological", "Drama"]
+          },
+          {
+            quote: "Time is passing so fast. It feels like mere seconds have passed since I sat down with you.",
+            character: "Kurisu Makise",
+            anime: "Steins;Gate",
+            genres: ["Sci-Fi", "Psychological", "Romance"]
+          },
+          {
+            quote: "If the king does not lead, how can he expect his subordinates to follow?",
+            character: "Lelouch vi Britannia",
+            anime: "Code Geass",
+            genres: ["Psychological", "Mecha", "Sci-Fi"]
+          },
+          {
+            quote: "False tears bring pain to others. A false smile brings pain to yourself.",
+            character: "C.C.",
+            anime: "Code Geass",
+            genres: ["Psychological", "Sci-Fi", "Drama"]
+          },
+          {
+            quote: "The law doesn't protect people. People protect the law.",
+            character: "Akane Tsunemori",
+            anime: "Psycho-Pass",
+            genres: ["Sci-Fi", "Psychological", "Action"]
+          },
+          {
+            quote: "Being a detective isn't about bringing someone down, but about shielding what is sacred.",
+            character: "Shinya Kogami",
+            anime: "Psycho-Pass",
+            genres: ["Sci-Fi", "Psychological", "Action"]
+          },
+          {
+            quote: "The only thing humans are equal in is death.",
+            character: "Johan Liebert",
+            anime: "Monster",
+            genres: ["Psychological", "Thriller", "Mystery"]
+          },
+          {
+            quote: "I mustn't run away. I mustn't run away. I mustn't run away!",
+            character: "Shinji Ikari",
+            anime: "Neon Genesis Evangelion",
+            genres: ["Psychological", "Mecha", "Sci-Fi"]
+          },
+          {
+            quote: "We are all born on this planet. We are all pieces of the same puzzle.",
+            character: "Shinichi Izumi",
+            anime: "Parasyte",
+            genres: ["Psychological", "Action", "Horror"]
+          },
+          {
+            quote: "Even if they don't see us as humans, we will die with our heads held high as the Eighty-Six.",
+            character: "Shinei Nouzen",
+            anime: "86-Eight Six",
+            genres: ["Sci-Fi", "Mecha", "Psychological", "Drama"]
+          },
+          {
+            quote: "I will not forget you. Even if the Republic forgets, I will remember until the end.",
+            character: "Vladilena Milizé",
+            anime: "86-Eight Six",
+            genres: ["Sci-Fi", "Psychological", "Drama"]
+          }
+        ],
+        fantasy: [
+          {
+            quote: "It's the little memories from the journey that end up lasting the longest.",
+            character: "Frieren",
+            anime: "Frieren: Beyond Journey’s End",
+            genres: ["Fantasy", "Slice of Life", "Adventure"]
+          },
+          {
+            quote: "Even if it only lasts a fraction of your life, I wanted to leave behind something beautiful for you.",
+            character: "Himmel",
+            anime: "Frieren: Beyond Journey’s End",
+            genres: ["Fantasy", "Adventure", "Drama"]
+          },
+          {
+            quote: "A lesson without pain is meaningless. For you cannot gain something without sacrificing something else in return.",
+            character: "Edward Elric",
+            anime: "Fullmetal Alchemist: Brotherhood",
+            genres: ["Fantasy", "Action", "Adventure"]
+          },
+          {
+            quote: "The world isn't perfect. But it's there for us, doing the best it can... that's what makes it so damn beautiful.",
+            character: "Roy Mustang",
+            anime: "Fullmetal Alchemist: Brotherhood",
+            genres: ["Fantasy", "Action", "Drama"]
+          },
+          {
+            quote: "If you can't forgive yourself for being weak, then become strong. Stand up and fight!",
+            character: "Subaru Natsuki",
+            anime: "Re:Zero",
+            genres: ["Fantasy", "Drama", "Psychological"]
+          },
+          {
+            quote: "No matter what happens, even when it looks like you're gonna lose, when no one else in the world believes in you... Rem will believe in you.",
+            character: "Rem",
+            anime: "Re:Zero",
+            genres: ["Fantasy", "Drama", "Romance"]
+          },
+          {
+            quote: "You should enjoy the little detours to the fullest. Because that's where you'll find what's truly important.",
+            character: "Ging Freecss",
+            anime: "Hunter x Hunter",
+            genres: ["Fantasy", "Adventure", "Action"]
+          },
+          {
+            quote: "If I ignore a friend I have the ability to help, wouldn't I be betraying him?",
+            character: "Killua Zoldyck",
+            anime: "Hunter x Hunter",
+            genres: ["Fantasy", "Action", "Adventure"]
+          },
+          {
+            quote: "No matter how many people you may lose, you have no choice but to go on living.",
+            character: "Tanjiro Kamado",
+            anime: "Demon Slayer",
+            genres: ["Fantasy", "Action", "Supernatural"]
+          },
+          {
+            quote: "There are no regrets. If one can be proud of one's life, one should not wish for another chance.",
+            character: "Saber",
+            anime: "Fate/stay night",
+            genres: ["Fantasy", "Action", "Supernatural"]
+          },
+          {
+            quote: "In this life, I will try my hardest with everything I've got.",
+            character: "Rudeus Greyrat",
+            anime: "Mushoku Tensei",
+            genres: ["Fantasy", "Isekai", "Adventure"]
+          }
+        ]
+      };
+
+      // Compatibility alias
+      const FALLBACK_QUOTES = CURATED_QUOTES;
+
+      // AniQuotesAPI Database (Loaded instantly from local quotes-data.js or localStorage or fetched)
+      let aniQuotesDatabase = (typeof window.ANI_QUOTES_DATA !== 'undefined' && Array.isArray(window.ANI_QUOTES_DATA))
+        ? window.ANI_QUOTES_DATA
+        : [];
+
+      try {
+        const storedQuotes = localStorage.getItem('animechan_cached_quotes');
+        if (storedQuotes) {
+          const parsed = JSON.parse(storedQuotes);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            aniQuotesDatabase = parsed;
+          }
+        }
+      } catch (e) {
+        console.warn('Could not read cached quotes from localStorage:', e);
+      }
+
+      // Background sync: Fetch quotes.json locally and from GitHub CDN
+      (async function syncQuotesDatabase() {
+        if (!aniQuotesDatabase || aniQuotesDatabase.length === 0) {
+          try {
+            const localRes = await fetch('quotes.json');
+            if (localRes.ok) {
+              const list = await localRes.json();
+              if (Array.isArray(list) && list.length > 0) {
+                aniQuotesDatabase = list;
+                try { localStorage.setItem('animechan_cached_quotes', JSON.stringify(list)); } catch (e) {}
+              }
+            }
+          } catch (e) {}
+        }
+
+        if (navigator.onLine) {
+          try {
+            const netRes = await fetch(GITHUB_QUOTES_URL, { cache: 'no-cache' });
+            if (netRes.ok) {
+              const list = await netRes.json();
+              if (Array.isArray(list) && list.length > 0) {
+                aniQuotesDatabase = list;
+                try { localStorage.setItem('animechan_cached_quotes', JSON.stringify(list)); } catch (e) {}
+              }
+            }
+          } catch (e) {}
+        }
+      })();
+
+      // DOM Elements
+      const quoteCard = document.getElementById('quoteCard');
+      const quoteBody = document.getElementById('quoteBody');
+      const quoteTextEl = document.getElementById('quoteText');
+      const characterNameEl = document.getElementById('characterName');
+      const animeTitleEl = document.getElementById('animeTitle');
+      const genrePillEl = document.getElementById('genrePill');
+      const statusDotEl = document.getElementById('statusDot');
+      const statusLabelEl = document.getElementById('statusLabel');
+      const refreshBtn = document.getElementById('refreshBtn');
+      const videoBtn = document.getElementById('videoBtn');
+      const videoFileInput = document.getElementById('videoFileInput');
+      const modeSelect = document.getElementById('modeSelect');
+      const progressBar = document.getElementById('progressBar');
+      const bgVideo = document.getElementById('bgVideo');
+      const videoDimmer = document.getElementById('videoDimmer');
+      const dropHint = document.getElementById('dropHint');
+
+      let currentMode = 'all';
+      let rotationTimer = null;
+      let progressTimer = null;
+      let timeElapsed = 0;
+      let isFetching = false;
+      let retryTimeout = null;
+      let retryCount = 0;
+      const RETRY_DELAYS = [3000, 5000, 8000, 15000, 30000];
+      const recentQuoteKeys = [];
+
+      // Comprehensive Genre & Tag Database (maps all AniQuotes anime + popular titles)
+      let animeGenreCache = {
+        // AniQuotesAPI Anime Mapping (covers all 801 quotes from GitHub JSON)
+        'Naruto Shippuden': ['Action', 'Adventure', 'Fantasy', 'Shounen'],
+        'Naruto': ['Action', 'Adventure', 'Fantasy', 'Shounen'],
+        'Attack on Titan': ['Action', 'Fantasy', 'Drama', 'Mystery', 'Psychological', 'Shounen'],
+        'One Piece': ['Action', 'Adventure', 'Comedy', 'Fantasy', 'Shounen'],
+        'Dragon Ball': ['Action', 'Adventure', 'Fantasy', 'Martial Arts', 'Shounen'],
+        'Dragon Ball Z': ['Action', 'Adventure', 'Fantasy', 'Martial Arts', 'Sci-Fi', 'Shounen'],
+        'Dragon Ball Super': ['Action', 'Adventure', 'Fantasy', 'Martial Arts', 'Sci-Fi', 'Shounen'],
+        'Solo Leveling': ['Action', 'Fantasy', 'Supernatural', 'Adventure'],
+        'Your Name': ['Romance', 'Drama', 'Supernatural'],
+        '86-Eight Six': ['Sci-Fi', 'Mecha', 'Psychological', 'Drama', 'Action'],
+        '86': ['Sci-Fi', 'Mecha', 'Psychological', 'Drama', 'Action'],
+        'Frieren: Beyond Journey’s End': ['Adventure', 'Drama', 'Fantasy', 'Slice of Life'],
+        "Frieren: Beyond Journey's End": ['Adventure', 'Drama', 'Fantasy', 'Slice of Life'],
+        'Frieren': ['Adventure', 'Drama', 'Fantasy', 'Slice of Life'],
+
+        // Ecchi & Harem
+        'High School DxD': ['Ecchi', 'Action', 'Comedy', 'Harem', 'Romance', 'Fantasy'],
+        'To Love Ru': ['Ecchi', 'Comedy', 'Harem'],
+        'To LOVE-Ru': ['Ecchi', 'Comedy', 'Harem'],
+        'Prison School': ['Ecchi', 'Comedy'],
+        'No Game No Life': ['Ecchi', 'Comedy', 'Fantasy'],
+        'Bakemonogatari': ['Ecchi', 'Comedy', 'Mystery', 'Romance', 'Supernatural'],
+        'Food Wars!': ['Ecchi', 'Comedy', 'Shounen'],
+        'Kill la Kill': ['Action', 'Comedy', 'Ecchi'],
+        'Date A Live': ['Ecchi', 'Harem', 'Sci-Fi', 'Romance'],
+        'Trinity Seven': ['Ecchi', 'Harem', 'Fantasy', 'Action'],
+        'The Quintessential Quintuplets': ['Ecchi', 'Harem', 'Romance', 'Comedy'],
+
+        // Romance & Drama
+        'Your Lie in April': ['Drama', 'Music', 'Romance'],
+        'Clannad: After Story': ['Drama', 'Romance', 'Slice of Life', 'Supernatural'],
+        'Clannad': ['Drama', 'Romance', 'Slice of Life', 'Supernatural'],
+        'Toradora!': ['Romance', 'Comedy', 'Drama'],
+        'I Want to Eat Your Pancreas': ['Romance', 'Drama', 'Slice of Life'],
+        'Kaguya-sama: Love is War': ['Romance', 'Comedy', 'Psychological'],
+        'My Teen Romantic Comedy SNAFU': ['Romance', 'Drama', 'Slice of Life'],
+        'Violet Evergarden': ['Drama', 'Romance', 'Fantasy'],
+        'A Silent Voice': ['Drama', 'Romance', 'Slice of Life'],
+        'Rascal Does Not Dream of Bunny Girl Senpai': ['Romance', 'Drama', 'Supernatural'],
+        'Horimiya': ['Romance', 'Comedy', 'Slice of Life'],
+
+        // Comedy
+        'Gintama': ['Action', 'Comedy', 'Sci-Fi', 'Parody'],
+        'KonoSuba': ['Comedy', 'Fantasy', 'Adventure', 'Ecchi', 'Isekai'],
+        'The Disastrous Life of Saiki K.': ['Comedy', 'Supernatural'],
+        'Grand Blue': ['Comedy', 'Slice of Life'],
+        'One Punch Man': ['Comedy', 'Action', 'Super Power'],
+        'Spy x Family': ['Comedy', 'Action', 'Slice of Life'],
+        'Bocchi the Rock!': ['Comedy', 'Music', 'Slice of Life'],
+        'Great Teacher Onizuka': ['Comedy', 'Drama', 'Slice of Life'],
+
+        // Psychological & Sci-Fi
+        'Death Note': ['Mystery', 'Psychological', 'Supernatural', 'Thriller'],
+        'Steins;Gate': ['Drama', 'Psychological', 'Sci-Fi', 'Thriller'],
+        'Code Geass': ['Action', 'Drama', 'Mecha', 'Psychological', 'Sci-Fi'],
+        'Psycho-Pass': ['Sci-Fi', 'Psychological', 'Action'],
+        'Monster': ['Psychological', 'Thriller', 'Mystery'],
+        'Neon Genesis Evangelion': ['Psychological', 'Mecha', 'Sci-Fi', 'Drama'],
+        'Parasyte': ['Psychological', 'Action', 'Horror', 'Sci-Fi'],
+
+        // Fantasy & Supernatural
+        'Fullmetal Alchemist: Brotherhood': ['Action', 'Adventure', 'Drama', 'Fantasy'],
+        'Re:Zero': ['Fantasy', 'Drama', 'Psychological'],
+        'Hunter x Hunter': ['Fantasy', 'Action', 'Adventure'],
+        'Jujutsu Kaisen': ['Action', 'Supernatural', 'Shounen'],
+        'Demon Slayer': ['Action', 'Fantasy', 'Supernatural'],
+        'Fate/stay night': ['Fantasy', 'Action', 'Supernatural'],
+        'Fate/Zero': ['Fantasy', 'Action', 'Supernatural', 'Psychological'],
+        'Mushoku Tensei': ['Fantasy', 'Adventure', 'Isekai'],
+        'Bleach': ['Action', 'Supernatural', 'Shounen'],
+        'Chainsaw Man': ['Action', 'Supernatural', 'Horror'],
+        'Vinland Saga': ['Action', 'Drama', 'Historical'],
+        'Black Clover': ['Action', 'Fantasy', 'Shounen']
+      };
+
+      try {
+        const storedGenreCache = localStorage.getItem('anilist_genre_cache_v1');
+        if (storedGenreCache) {
+          animeGenreCache = Object.assign(animeGenreCache, JSON.parse(storedGenreCache));
+        }
+      } catch (e) {
+        console.warn('Could not read genre cache:', e);
+      }
+
+      let currentFetchId = 0;
+      let isOnlineState = true;
+
+      // IndexedDB for storing custom wallpaper video locally
+      const DB_NAME = 'LivelyAnimeOverlayDB';
+      const STORE_NAME = 'wallpaperMedia';
+
+      function openDB() {
+        return new Promise((resolve, reject) => {
+          const req = indexedDB.open(DB_NAME, 1);
+          req.onupgradeneeded = () => req.result.createObjectStore(STORE_NAME);
+          req.onsuccess = () => resolve(req.result);
+          req.onerror = () => reject(req.error);
+        });
+      }
+
+      async function saveVideoFile(file) {
+        try {
+          const db = await openDB();
+          const tx = db.transaction(STORE_NAME, 'readwrite');
+          tx.objectStore(STORE_NAME).put(file, 'bgVideoBlob');
+          await new Promise(r => tx.oncomplete = r);
+        } catch (e) {
+          console.warn('Failed to store video in IndexedDB:', e);
+        }
+      }
+
+      async function loadSavedVideo() {
+        try {
+          const db = await openDB();
+          const tx = db.transaction(STORE_NAME, 'readonly');
+          const file = await new Promise((resolve) => {
+            const req = tx.objectStore(STORE_NAME).get('bgVideoBlob');
+            req.onsuccess = () => resolve(req.result);
+            req.onerror = () => resolve(null);
+          });
+
+          if (file) {
+            setVideoSource(URL.createObjectURL(file));
+            return true;
+          }
+        } catch (e) { }
+
+        // Default to video.mp4 in folder
+        setVideoSource('video.mp4');
+        return true;
+      }
+
+      function setVideoSource(src) {
+        bgVideo.src = src;
+        bgVideo.style.display = 'block';
+        videoDimmer.style.display = 'block';
+        bgVideo.muted = true;
+        const playPromise = bgVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(err => {
+            console.warn('Autoplay waiting for user gesture or muted:', err);
+          });
+        }
+      }
+
+      // If video file fails or doesn't exist, gracefully keep background transparent
+      bgVideo.addEventListener('error', () => {
+        bgVideo.style.display = 'none';
+        videoDimmer.style.display = 'none';
+      });
+
+      // Drag and drop video file onto the wallpaper
+      window.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropHint.style.display = 'flex';
+      });
+
+      window.addEventListener('dragleave', (e) => {
+        if (e.relatedTarget === null) dropHint.style.display = 'none';
+      });
+
+      window.addEventListener('drop', async (e) => {
+        e.preventDefault();
+        dropHint.style.display = 'none';
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith('video/')) {
+          setVideoSource(URL.createObjectURL(file));
+          await saveVideoFile(file);
+        }
+      });
+
+      videoBtn.addEventListener('click', () => {
+        videoFileInput.click();
+      });
+
+      videoFileInput.addEventListener('change', async (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          setVideoSource(URL.createObjectURL(file));
+          await saveVideoFile(file);
+        }
+      });
+
+      function parseQuotePayload(payload) {
+        if (!payload) return null;
+        if (payload.data) {
+          const item = Array.isArray(payload.data) ? payload.data[0] : payload.data;
+          if (item) {
+            return {
+              quote: item.content || item.quote || item.text || '',
+              character: typeof item.character === 'object' ? item.character.name : item.character || 'Unknown',
+              anime: typeof item.anime === 'object' ? item.anime.name : item.anime || 'Unknown'
+            };
+          }
+        }
+        const target = Array.isArray(payload) ? payload[0] : payload;
+        if (target && (target.quote || target.content)) {
+          return {
+            quote: target.content || target.quote || '',
+            character: typeof target.character === 'object' ? target.character.name : target.character || 'Unknown',
+            anime: typeof target.anime === 'object' ? target.anime.name : target.anime || 'Unknown'
+          };
+        }
+        return null;
+      }
+
+      async function getAnimeGenres(animeTitle) {
+        if (!animeTitle || animeTitle === 'Unknown') return [];
+        const cleanTitle = animeTitle.replace(/\s*\([^)]*\)/g, '').trim();
+        if (animeGenreCache[cleanTitle]) {
+          return animeGenreCache[cleanTitle];
+        }
+
+        try {
+          const query = `
+            query ($search: String) {
+              Media(search: $search, type: ANIME) {
+                genres
+                tags {
+                  name
+                }
+              }
+            }
+          `;
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 3500);
+          const res = await fetch('https://graphql.anilist.co', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ query, variables: { search: cleanTitle } }),
+            signal: controller.signal
+          });
+          clearTimeout(timeoutId);
+
+          if (res.ok) {
+            const json = await res.json();
+            const media = json.data?.Media;
+            const genres = media?.genres || [];
+            const tags = (media?.tags || []).map(t => t.name);
+            const combined = [...new Set([...genres, ...tags])];
+            if (combined.length > 0) {
+              animeGenreCache[cleanTitle] = combined;
+              try {
+                localStorage.setItem('anilist_genre_cache_v1', JSON.stringify(animeGenreCache));
+              } catch (e) {}
+              return combined;
+            }
+          }
+        } catch (e) {
+          console.warn('[AniList] Genre lookup failed for:', cleanTitle, e.message);
+        }
+
+        return [];
+      }
+
+      function matchesGenre(itemGenres, targetGenre) {
+        if (!targetGenre || targetGenre === 'all') return true;
+        const lowerGenres = (itemGenres || []).map(g => (g || '').toLowerCase());
+
+        switch (targetGenre) {
+          case 'action':
+            return lowerGenres.some(g => ['action', 'adventure', 'shounen', 'shonen', 'martial arts', 'super power'].includes(g));
+          case 'ecchi':
+            return lowerGenres.some(g => ['ecchi', 'harem', 'female harem', 'nudity'].includes(g));
+          case 'romance':
+            return lowerGenres.some(g => ['romance', 'drama', 'slice of life'].includes(g));
+          case 'comedy':
+            return lowerGenres.some(g => ['comedy', 'parody', 'slapstick'].includes(g));
+          case 'psychological':
+            return lowerGenres.some(g => ['psychological', 'sci-fi', 'thriller', 'mystery', 'mecha'].includes(g));
+          case 'fantasy':
+            return lowerGenres.some(g => ['fantasy', 'supernatural', 'magic', 'demons', 'isekai'].includes(g));
+          default:
+            return true;
+        }
+      }
+
+      /**
+       * Master Quote Selector:
+       * When mode is 'all', guarantees EVERY type is included:
+       * - All 801 quotes from AniQuotesAPI (Naruto, AoT, One Piece, Dragon Ball, Solo Leveling, Your Name, 86, Frieren)
+       * - Curated quotes across all genres (Ecchi, Romance, Comedy, Psychological, Fantasy, Action)
+       * - When mode is a specific genre, accurately filters quotes matching that genre
+       */
+      function pickQuoteFromDatabase(mode) {
+        const targetMode = mode || 'all';
+        let candidatePool = [];
+
+        // 1. Quotes from AniQuotesAPI database (801 quotes from quotes.json)
+        if (aniQuotesDatabase && aniQuotesDatabase.length > 0) {
+          const matchingAniQuotes = aniQuotesDatabase.filter(cand => {
+            const genres = animeGenreCache[cand.anime] || [];
+            return matchesGenre(genres, targetMode);
+          });
+          candidatePool.push(...matchingAniQuotes);
+        }
+
+        // 2. Curated quotes for the target genre or all genres
+        if (targetMode === 'all') {
+          // Flatten all curated genres so every type is represented
+          const allCurated = Object.values(CURATED_QUOTES).flat();
+          candidatePool.push(...allCurated);
+        } else if (CURATED_QUOTES[targetMode]) {
+          candidatePool.push(...CURATED_QUOTES[targetMode]);
+        }
+
+        if (candidatePool.length === 0) {
+          candidatePool = CURATED_QUOTES.action;
+        }
+
+        // Filter out recently shown quotes to prevent quick repeats
+        let eligible = candidatePool.filter(c => !recentQuoteKeys.includes(c.quote));
+        if (eligible.length === 0) {
+          recentQuoteKeys.length = 0; // Reset history if all shown
+          eligible = candidatePool;
+        }
+
+        // In 'all' mode: diversify across anime / types instead of clustering on a single anime
+        let picked;
+        if (targetMode === 'all') {
+          // 40% chance: pick from curated multi-genre pool (guarantees Ecchi, Romance, Comedy, Psych are seen)
+          // 60% chance: pick from AniQuotesAPI pool (Naruto, AoT, One Piece, DBZ, Solo Leveling, Your Name, 86, Frieren)
+          const allCurated = Object.values(CURATED_QUOTES).flat();
+          const shouldPickCurated = Math.random() < 0.4;
+          if (shouldPickCurated && allCurated.length > 0) {
+            const curatedEligible = allCurated.filter(c => !recentQuoteKeys.includes(c.quote));
+            const poolToUse = curatedEligible.length > 0 ? curatedEligible : allCurated;
+            picked = poolToUse[Math.floor(Math.random() * poolToUse.length)];
+          } else {
+            picked = eligible[Math.floor(Math.random() * eligible.length)];
+          }
+        } else {
+          // If this genre has curated quotes, give a balanced 50/50 chance between curated quotes and matching AniQuotes
+          const curatedForMode = CURATED_QUOTES[targetMode] || [];
+          const matchingAniQuotes = (aniQuotesDatabase || []).filter(cand => {
+            const genres = animeGenreCache[cand.anime] || [];
+            return matchesGenre(genres, targetMode);
+          });
+
+          if (curatedForMode.length > 0 && matchingAniQuotes.length > 0) {
+            const shouldPickCurated = Math.random() < 0.5;
+            if (shouldPickCurated) {
+              const eligibleCurated = curatedForMode.filter(c => !recentQuoteKeys.includes(c.quote));
+              const pool = eligibleCurated.length > 0 ? eligibleCurated : curatedForMode;
+              picked = pool[Math.floor(Math.random() * pool.length)];
+            } else {
+              const eligibleAni = matchingAniQuotes.filter(c => !recentQuoteKeys.includes(c.quote));
+              const pool = eligibleAni.length > 0 ? eligibleAni : matchingAniQuotes;
+              picked = pool[Math.floor(Math.random() * pool.length)];
+            }
+          } else {
+            picked = eligible[Math.floor(Math.random() * eligible.length)];
+          }
+        }
+
+        // Track recently shown
+        if (picked && picked.quote) {
+          recentQuoteKeys.push(picked.quote);
+          if (recentQuoteKeys.length > 30) {
+            recentQuoteKeys.shift();
+          }
+        }
+
+        const genres = picked.genres || animeGenreCache[picked.anime] || [];
+        return {
+          quote: picked.quote,
+          character: picked.character || 'Unknown',
+          anime: picked.anime || 'Unknown',
+          genres
+        };
+      }
+
+      function getFallbackQuote(mode) {
+        return pickQuoteFromDatabase(mode);
+      }
+
+      function updateQuoteDisplay(data, isOnline = true, genres = []) {
+        if (!data) return;
+        quoteBody.classList.add('fade-out');
+
+        setTimeout(() => {
+          quoteTextEl.textContent = `“${data.quote}”`;
+          characterNameEl.textContent = `— ${data.character}`;
+          animeTitleEl.textContent = data.anime;
+
+          // Display detected genres in pill
+          if (genrePillEl) {
+            const displayGenres = (genres || []).filter(g =>
+              ['Action', 'Adventure', 'Comedy', 'Drama', 'Ecchi', 'Fantasy', 'Horror', 'Mecha', 'Mystery', 'Psychological', 'Romance', 'Sci-Fi', 'Slice of Life', 'Supernatural', 'Thriller', 'Harem', 'Shounen'].includes(g)
+            ).slice(0, 2);
+
+            if (displayGenres.length > 0) {
+              genrePillEl.textContent = displayGenres.join(' • ');
+              genrePillEl.style.display = 'inline-block';
+            } else {
+              genrePillEl.style.display = 'none';
+            }
+          }
+
+          statusDotEl.className = 'status-dot' + (isOnline ? '' : ' offline');
+          statusDotEl.title = isOnline
+            ? `${statusLabelEl.textContent.trim()} (Online • Connected)`
+            : `${statusLabelEl.textContent.trim()} (Offline • Auto-reconnecting...)`;
+
+          quoteBody.classList.remove('fade-out');
+        }, 300);
+      }
+
+      function scheduleRetry() {
+        if (retryTimeout) clearTimeout(retryTimeout);
+        const delay = RETRY_DELAYS[Math.min(retryCount, RETRY_DELAYS.length - 1)];
+        retryCount++;
+        console.log(`[Auto-Reconnect] Retrying in ${delay / 1000}s (attempt ${retryCount})...`);
+        retryTimeout = setTimeout(() => {
+          fetchQuote();
+        }, delay);
+      }
+
+      function clearRetry() {
+        if (retryTimeout) {
+          clearTimeout(retryTimeout);
+          retryTimeout = null;
+        }
+        retryCount = 0;
+      }
+
+      async function isNetworkReachable() {
+        if (!navigator.onLine) return false;
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 3000);
+          const res = await fetch(GITHUB_QUOTES_URL, {
+            method: 'HEAD',
+            cache: 'no-store',
+            signal: controller.signal
+          });
+          clearTimeout(timeoutId);
+          return res.ok;
+        } catch (e) {
+          return navigator.onLine;
+        }
+      }
+
+      function applyGenre(newGenre) {
+        if (!newGenre) return;
+        currentMode = newGenre;
+        modeSelect.value = newGenre;
+        clearRetry();
+
+        // 1. INSTANT ZERO-LATENCY FEEDBACK: Display an authentic quote from the selected genre immediately!
+        const instantQuote = pickQuoteFromDatabase(currentMode);
+        updateQuoteDisplay(instantQuote, isOnlineState, instantQuote.genres);
+
+        // 2. Refresh cycle in background
+        resetIntervalClock();
+      }
+
+      async function fetchQuote(isManual = false) {
+        if (isFetching && !isManual) return;
+        isFetching = true;
+        const fetchId = ++currentFetchId;
+
+        statusDotEl.className = 'status-dot loading';
+        refreshBtn.classList.add('spinning');
+
+        let fetchedData = null;
+        let detectedGenres = [];
+        let isOnline = false;
+
+        // In 'all' mode, occasionally (~20%) poll Animechan API for fresh live quotes if connected,
+        // or prioritize our rich 801+ multi-genre database containing all requested types and AniQuotes.
+        const shouldQueryLiveApi = navigator.onLine && (Math.random() < 0.20 || isManual);
+
+        if (shouldQueryLiveApi) {
+          const endpoints = API_ENDPOINTS.random;
+          for (const url of endpoints) {
+            try {
+              const controller = new AbortController();
+              const timeoutId = setTimeout(() => controller.abort(), 2500);
+
+              const res = await fetch(url, {
+                headers: { 'Accept': 'application/json' },
+                signal: controller.signal
+              });
+              clearTimeout(timeoutId);
+
+              if (res.ok) {
+                const json = await res.json();
+                const parsed = parseQuotePayload(json);
+                if (parsed && parsed.quote) {
+                  const genres = await getAnimeGenres(parsed.anime);
+                  if (matchesGenre(genres, currentMode)) {
+                    isOnline = true;
+                    fetchedData = parsed;
+                    detectedGenres = genres;
+                    break;
+                  }
+                }
+              }
+            } catch (err) {
+              console.warn(`[Animechan] Fetch from ${url} failed:`, err.message);
+            }
+          }
+        }
+
+        // Check if user changed genre while this request was running
+        if (fetchId !== currentFetchId) {
+          isFetching = false;
+          refreshBtn.classList.remove('spinning');
+          return;
+        }
+
+        // Master Database Fallback / Primary Source:
+        // Guarantees all 801 quotes from AniQuotesAPI + all genre types (Ecchi, Romance, Comedy, Psych, Fantasy, Action)
+        if (!fetchedData) {
+          const localQuote = pickQuoteFromDatabase(currentMode);
+          fetchedData = localQuote;
+          detectedGenres = localQuote.genres;
+          isOnline = navigator.onLine;
+        }
+
+        if (!navigator.onLine) {
+          isOnline = false;
+        }
+
+        isOnlineState = isOnline;
+        updateQuoteDisplay(fetchedData, isOnline, detectedGenres);
+        refreshBtn.classList.remove('spinning');
+        isFetching = false;
+
+        if (isOnline) {
+          clearRetry();
+          resetIntervalClock();
+        } else {
+          scheduleRetry();
+        }
+      }
+
+      function resetIntervalClock() {
+        timeElapsed = 0;
+        progressBar.style.width = '0%';
+
+        if (rotationTimer) clearInterval(rotationTimer);
+        if (progressTimer) clearInterval(progressTimer);
+
+        progressTimer = setInterval(() => {
+          timeElapsed += PROGRESS_TICK_MS;
+          const percentage = Math.min((timeElapsed / ROTATION_INTERVAL_MS) * 100, 100);
+          progressBar.style.width = `${percentage}%`;
+        }, PROGRESS_TICK_MS);
+
+        rotationTimer = setInterval(() => {
+          fetchQuote();
+        }, ROTATION_INTERVAL_MS);
+      }
+
+      function setupDraggable() {
+        let isDragging = false;
+        let startX, startY, origX, origY;
+
+        const savedPos = localStorage.getItem('animechan_widget_pos');
+        if (savedPos) {
+          try {
+            const { x, y } = JSON.parse(savedPos);
+            quoteCard.style.left = `${x}px`;
+            quoteCard.style.top = `${y}px`;
+            quoteCard.style.right = 'auto';
+            quoteCard.style.bottom = 'auto';
+          } catch (e) { }
+        }
+
+        quoteCard.addEventListener('mousedown', (e) => {
+          if (e.target.closest('button') || e.target.closest('select') || e.target.closest('input')) return;
+
+          isDragging = true;
+          startX = e.clientX;
+          startY = e.clientY;
+
+          const rect = quoteCard.getBoundingClientRect();
+          origX = rect.left;
+          origY = rect.top;
+
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+        });
+
+        function onMouseMove(e) {
+          if (!isDragging) return;
+          const dx = e.clientX - startX;
+          const dy = e.clientY - startY;
+
+          let newX = Math.max(10, Math.min(window.innerWidth - quoteCard.offsetWidth - 10, origX + dx));
+          let newY = Math.max(10, Math.min(window.innerHeight - quoteCard.offsetHeight - 10, origY + dy));
+
+          quoteCard.style.left = `${newX}px`;
+          quoteCard.style.top = `${newY}px`;
+          quoteCard.style.right = 'auto';
+          quoteCard.style.bottom = 'auto';
+        }
+
+        function onMouseUp() {
+          if (!isDragging) return;
+          isDragging = false;
+          document.removeEventListener('mousemove', onMouseMove);
+          document.removeEventListener('mouseup', onMouseUp);
+
+          const rect = quoteCard.getBoundingClientRect();
+          localStorage.setItem('animechan_widget_pos', JSON.stringify({ x: rect.left, y: rect.top }));
+        }
+      }
+
+      refreshBtn.addEventListener('click', () => {
+        clearRetry();
+        fetchQuote(true);
+      });
+
+      // Robust dropdown event binding with stopPropagation to prevent drag capture
+      modeSelect.addEventListener('change', (e) => {
+        applyGenre(e.target.value);
+      });
+      modeSelect.addEventListener('input', (e) => {
+        applyGenre(e.target.value);
+      });
+      modeSelect.addEventListener('mousedown', (e) => {
+        e.stopPropagation();
+      });
+      modeSelect.addEventListener('pointerdown', (e) => {
+        e.stopPropagation();
+      });
+
+      // Quick manual reconnect / refresh by clicking status badge
+      const statusBadge = document.querySelector('.status-badge');
+      if (statusBadge) {
+        statusBadge.addEventListener('click', () => {
+          clearRetry();
+          fetchQuote(true);
+        });
+      }
+
+      // Automatically keep online whenever laptop connects to internet
+      window.addEventListener('online', () => {
+        console.log('[Network] Internet connected! Fetching live quote...');
+        clearRetry();
+        fetchQuote(true);
+      });
+
+      // Immediately show offline state when internet disconnects
+      window.addEventListener('offline', () => {
+        console.log('[Network] Internet disconnected.');
+        statusDotEl.className = 'status-dot offline';
+        statusDotEl.title = `${statusLabelEl.textContent.trim()} (Offline • Waiting for connection...)`;
+        scheduleRetry();
+      });
+
+      // Automatically reconnect when laptop resumes from sleep or screen unlock
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden && !isFetching) {
+          if (statusDotEl.classList.contains('offline')) {
+            clearRetry();
+            fetchQuote(true);
+          }
+        }
+      });
+
+      window.addEventListener('focus', () => {
+        if (statusDotEl.classList.contains('offline') && !isFetching) {
+          clearRetry();
+          fetchQuote(true);
+        }
+      });
+
+      // Lively Wallpaper Customize Menu Integration
+      window.livelyPropertyListener = (name, val) => {
+        if (name === 'quoteMode') {
+          const modeMap = ['all', 'action', 'ecchi', 'romance', 'comedy', 'psychological', 'fantasy'];
+          const selected = modeMap[val] || 'all';
+          applyGenre(selected);
+        } else if (name === 'cardOpacity') {
+          quoteCard.style.background = `rgba(13, 13, 17, ${val / 100})`;
+        } else if (name === 'accentColor') {
+          document.documentElement.style.setProperty('--accent-color', val);
+        } else if (name === 'videoOpacity') {
+          bgVideo.style.opacity = (val / 100);
+        }
+      };
+
+      // Initialize
+      setupDraggable();
+      loadSavedVideo();
+      fetchQuote();
+    })();
+  </script>
+</body>
+
+</html>
