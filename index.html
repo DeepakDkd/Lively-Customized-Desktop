@@ -395,6 +395,7 @@
         </div>
         <div class="controls">
           <select id="modeSelect" class="mode-select" title="Anime Genre Filter">
+            <option value="default">Default (800 Quotes)</option>
             <option value="all">All Genres</option>
             <option value="action">Action / Shonen</option>
             <option value="ecchi">Ecchi / Harem</option>
@@ -461,7 +462,13 @@
       const API_ENDPOINTS = {
         random: [
           'https://api.animechan.io/v1/quotes/random',
-          'https://animechan.io/api/v1/quotes/random'
+          'https://animechan.io/api/v1/quotes/random',
+          'https://animechan.xyz/api/random'
+        ],
+        naruto: [
+          'https://api.animechan.io/v1/quotes/random?anime=naruto',
+          'https://animechan.io/api/v1/quotes/anime?title=naruto',
+          'https://animechan.xyz/api/random/anime?title=naruto'
         ]
       };
       const GITHUB_QUOTES_URL = 'https://raw.githubusercontent.com/Shineii86/AniQuotesAPI/main/data/quotes.json';
@@ -1041,7 +1048,7 @@
       const videoDimmer = document.getElementById('videoDimmer');
       const dropHint = document.getElementById('dropHint');
 
-      let currentMode = 'all';
+      let currentMode = 'default';
       let rotationTimer = null;
       let progressTimer = null;
       let timeElapsed = 0;
@@ -1333,88 +1340,121 @@
 
       /**
        * Master Quote Selector:
-       * When mode is 'all', guarantees EVERY type is included:
-       * - All 801 quotes from AniQuotesAPI (Naruto, AoT, One Piece, Dragon Ball, Solo Leveling, Your Name, 86, Frieren)
-       * - Curated quotes across all genres (Ecchi, Romance, Comedy, Psychological, Fantasy, Action)
+       * - When mode is 'default', prioritizes Naruto-related series most often, and cycles the rest of the 800 quotes
+       * - When mode is 'all', guarantees EVERY type is included across all genres
        * - When mode is a specific genre, accurately filters quotes matching that genre
        */
       function pickQuoteFromDatabase(mode) {
-        const targetMode = mode || 'all';
-        let candidatePool = [];
+        const targetMode = mode || 'default';
 
-        // 1. Quotes from AniQuotesAPI database (801 quotes from quotes.json)
-        if (aniQuotesDatabase && aniQuotesDatabase.length > 0) {
-          const matchingAniQuotes = aniQuotesDatabase.filter(cand => {
-            const genres = animeGenreCache[cand.anime] || [];
-            return matchesGenre(genres, targetMode);
+        // 1. DEFAULT MODE: Pick from the 800 quotes, prioritizing Naruto-related series most often
+        if (targetMode === 'default') {
+          let pool = (aniQuotesDatabase && aniQuotesDatabase.length > 0)
+            ? aniQuotesDatabase
+            : Object.values(CURATED_QUOTES).flat();
+
+          const narutoPool = pool.filter(c => {
+            const a = (c.anime || '').toLowerCase();
+            return a.includes('naruto') || a.includes('boruto');
           });
-          candidatePool.push(...matchingAniQuotes);
+          const otherPool = pool.filter(c => {
+            const a = (c.anime || '').toLowerCase();
+            return !a.includes('naruto') && !a.includes('boruto');
+          });
+
+          // Naruto prioritized (~60% of the time), other series from the 800 quotes (40% of the time)
+          let candidatePool;
+          if (narutoPool.length > 0 && Math.random() < 0.60) {
+            candidatePool = narutoPool;
+          } else if (otherPool.length > 0) {
+            candidatePool = otherPool;
+          } else {
+            candidatePool = pool;
+          }
+
+          let eligible = candidatePool.filter(c => !recentQuoteKeys.includes(c.quote));
+          if (eligible.length === 0) eligible = candidatePool;
+
+          const picked = eligible[Math.floor(Math.random() * eligible.length)];
+          if (picked && picked.quote) {
+            recentQuoteKeys.push(picked.quote);
+            if (recentQuoteKeys.length > 30) recentQuoteKeys.shift();
+          }
+
+          const genres = picked.genres || animeGenreCache[picked.anime] || ['Action', 'Shounen'];
+          return {
+            quote: picked.quote,
+            character: picked.character || 'Unknown',
+            anime: picked.anime || 'Unknown',
+            genres
+          };
         }
 
-        // 2. Curated quotes for the target genre or all genres
+        // 2. ALL GENRES MODE: Balanced diversity across all types and sources
         if (targetMode === 'all') {
-          // Flatten all curated genres so every type is represented
           const allCurated = Object.values(CURATED_QUOTES).flat();
-          candidatePool.push(...allCurated);
-        } else if (CURATED_QUOTES[targetMode]) {
-          candidatePool.push(...CURATED_QUOTES[targetMode]);
-        }
-
-        if (candidatePool.length === 0) {
-          candidatePool = CURATED_QUOTES.action;
-        }
-
-        // Filter out recently shown quotes to prevent quick repeats
-        let eligible = candidatePool.filter(c => !recentQuoteKeys.includes(c.quote));
-        if (eligible.length === 0) {
-          recentQuoteKeys.length = 0; // Reset history if all shown
-          eligible = candidatePool;
-        }
-
-        // In 'all' mode: diversify across anime / types instead of clustering on a single anime
-        let picked;
-        if (targetMode === 'all') {
-          // 40% chance: pick from curated multi-genre pool (guarantees Ecchi, Romance, Comedy, Psych are seen)
-          // 60% chance: pick from AniQuotesAPI pool (Naruto, AoT, One Piece, DBZ, Solo Leveling, Your Name, 86, Frieren)
-          const allCurated = Object.values(CURATED_QUOTES).flat();
-          const shouldPickCurated = Math.random() < 0.4;
+          const shouldPickCurated = Math.random() < 0.45;
+          let poolToUse;
           if (shouldPickCurated && allCurated.length > 0) {
-            const curatedEligible = allCurated.filter(c => !recentQuoteKeys.includes(c.quote));
-            const poolToUse = curatedEligible.length > 0 ? curatedEligible : allCurated;
-            picked = poolToUse[Math.floor(Math.random() * poolToUse.length)];
+            poolToUse = allCurated;
+          } else if (aniQuotesDatabase && aniQuotesDatabase.length > 0) {
+            poolToUse = aniQuotesDatabase;
           } else {
-            picked = eligible[Math.floor(Math.random() * eligible.length)];
+            poolToUse = allCurated;
           }
-        } else {
-          // If this genre has curated quotes, give a balanced 50/50 chance between curated quotes and matching AniQuotes
-          const curatedForMode = CURATED_QUOTES[targetMode] || [];
-          const matchingAniQuotes = (aniQuotesDatabase || []).filter(cand => {
-            const genres = animeGenreCache[cand.anime] || [];
-            return matchesGenre(genres, targetMode);
-          });
 
-          if (curatedForMode.length > 0 && matchingAniQuotes.length > 0) {
-            const shouldPickCurated = Math.random() < 0.5;
-            if (shouldPickCurated) {
-              const eligibleCurated = curatedForMode.filter(c => !recentQuoteKeys.includes(c.quote));
-              const pool = eligibleCurated.length > 0 ? eligibleCurated : curatedForMode;
-              picked = pool[Math.floor(Math.random() * pool.length)];
-            } else {
-              const eligibleAni = matchingAniQuotes.filter(c => !recentQuoteKeys.includes(c.quote));
-              const pool = eligibleAni.length > 0 ? eligibleAni : matchingAniQuotes;
-              picked = pool[Math.floor(Math.random() * pool.length)];
-            }
-          } else {
-            picked = eligible[Math.floor(Math.random() * eligible.length)];
+          let eligible = poolToUse.filter(c => !recentQuoteKeys.includes(c.quote));
+          if (eligible.length === 0) eligible = poolToUse;
+
+          const picked = eligible[Math.floor(Math.random() * eligible.length)];
+          if (picked && picked.quote) {
+            recentQuoteKeys.push(picked.quote);
+            if (recentQuoteKeys.length > 30) recentQuoteKeys.shift();
           }
+
+          const genres = picked.genres || animeGenreCache[picked.anime] || [];
+          return {
+            quote: picked.quote,
+            character: picked.character || 'Unknown',
+            anime: picked.anime || 'Unknown',
+            genres
+          };
         }
 
-        // Track recently shown
+        // 3. SPECIFIC GENRE FILTER: (action, ecchi, romance, comedy, psychological, fantasy)
+        const curatedForMode = CURATED_QUOTES[targetMode] || [];
+        const matchingAniQuotes = (aniQuotesDatabase || []).filter(cand => {
+          const genres = animeGenreCache[cand.anime] || [];
+          return matchesGenre(genres, targetMode);
+        });
+
+        let picked;
+        if (curatedForMode.length > 0 && matchingAniQuotes.length > 0) {
+          const shouldPickCurated = Math.random() < 0.5;
+          if (shouldPickCurated) {
+            const eligibleCurated = curatedForMode.filter(c => !recentQuoteKeys.includes(c.quote));
+            const pool = eligibleCurated.length > 0 ? eligibleCurated : curatedForMode;
+            picked = pool[Math.floor(Math.random() * pool.length)];
+          } else {
+            const eligibleAni = matchingAniQuotes.filter(c => !recentQuoteKeys.includes(c.quote));
+            const pool = eligibleAni.length > 0 ? eligibleAni : matchingAniQuotes;
+            picked = pool[Math.floor(Math.random() * pool.length)];
+          }
+        } else if (curatedForMode.length > 0) {
+          const eligible = curatedForMode.filter(c => !recentQuoteKeys.includes(c.quote));
+          const pool = eligible.length > 0 ? eligible : curatedForMode;
+          picked = pool[Math.floor(Math.random() * pool.length)];
+        } else if (matchingAniQuotes.length > 0) {
+          const eligible = matchingAniQuotes.filter(c => !recentQuoteKeys.includes(c.quote));
+          const pool = eligible.length > 0 ? eligible : matchingAniQuotes;
+          picked = pool[Math.floor(Math.random() * pool.length)];
+        } else {
+          picked = CURATED_QUOTES.action[0];
+        }
+
         if (picked && picked.quote) {
           recentQuoteKeys.push(picked.quote);
-          if (recentQuoteKeys.length > 30) {
-            recentQuoteKeys.shift();
-          }
+          if (recentQuoteKeys.length > 30) recentQuoteKeys.shift();
         }
 
         const genres = picked.genres || animeGenreCache[picked.anime] || [];
@@ -1523,12 +1563,18 @@
         let detectedGenres = [];
         let isOnline = false;
 
-        // In 'all' mode, occasionally (~20%) poll Animechan API for fresh live quotes if connected,
-        // or prioritize our rich 801+ multi-genre database containing all requested types and AniQuotes.
-        const shouldQueryLiveApi = navigator.onLine && (Math.random() < 0.20 || isManual);
+        // Live API query: in default mode prioritize Naruto endpoints, in all mode query random stream
+        const shouldQueryLiveApi = navigator.onLine && (currentMode === 'all' || isManual || Math.random() < 0.25);
 
         if (shouldQueryLiveApi) {
-          const endpoints = API_ENDPOINTS.random;
+          let endpoints = [];
+          if (currentMode === 'default') {
+            // Naruto-focused live endpoints prioritized (70%), or occasional random
+            endpoints = Math.random() < 0.70 ? API_ENDPOINTS.naruto : API_ENDPOINTS.random;
+          } else {
+            endpoints = API_ENDPOINTS.random;
+          }
+
           for (const url of endpoints) {
             try {
               const controller = new AbortController();
@@ -1545,7 +1591,7 @@
                 const parsed = parseQuotePayload(json);
                 if (parsed && parsed.quote) {
                   const genres = await getAnimeGenres(parsed.anime);
-                  if (matchesGenre(genres, currentMode)) {
+                  if (currentMode === 'default' || matchesGenre(genres, currentMode)) {
                     isOnline = true;
                     fetchedData = parsed;
                     detectedGenres = genres;
@@ -1554,7 +1600,7 @@
                 }
               }
             } catch (err) {
-              console.warn(`[Animechan] Fetch from ${url} failed:`, err.message);
+              console.warn(`[Live API] Fetch from ${url} failed:`, err.message);
             }
           }
         }
@@ -1728,8 +1774,8 @@
       // Lively Wallpaper Customize Menu Integration
       window.livelyPropertyListener = (name, val) => {
         if (name === 'quoteMode') {
-          const modeMap = ['all', 'action', 'ecchi', 'romance', 'comedy', 'psychological', 'fantasy'];
-          const selected = modeMap[val] || 'all';
+          const modeMap = ['default', 'all', 'action', 'ecchi', 'romance', 'comedy', 'psychological', 'fantasy'];
+          const selected = modeMap[val] || 'default';
           applyGenre(selected);
         } else if (name === 'cardOpacity') {
           quoteCard.style.background = `rgba(13, 13, 17, ${val / 100})`;

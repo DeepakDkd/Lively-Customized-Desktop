@@ -4,6 +4,7 @@
     "text": "Anime Genre Filter",
     "value": 0,
     "options": [
+      "Default (800 Quotes)",
       "All Genres",
       "Action / Shonen",
       "Ecchi / Harem",
